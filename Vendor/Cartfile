@@ -1,0 +1,18 @@
+github "Quick/Quick" ~> 1.1
+github "Quick/Nimble" ~> 7.0
+
+github "rlwimi/wwdc-session-transcripts" "refetched-vtt"
+
+# Swift 3 support is on master
+github "Haneke/HanekeSwift" "master"
+
+github "IBM-Swift/swift-html-entities" ~> 3.0
+github "krzysztofzablocki/Strongify" ~> 1.1
+github "mauriciosantos/Buckets-Swift" ~> 2.0
+github "ReactiveCocoa/ReactiveCocoa" ~> 5.0
+github "Raizlabs/Anchorage" ~> 3.3
+github "SwiftyJSON/SwiftyJSON" ~> 3.1
+
+# Listed here only to include its own license in Settings. Use released binary.
+# Pinned to match/document binary in Tools.
+github "mono0926/LicensePlist" == 1.4.2
