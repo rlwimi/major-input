@@ -60,6 +60,12 @@ Reading a session transcript is still passive learning, but, at least for me, it
 
 I expected this tool would make the huge (and growing yearly) corpus of sessions more accessible to me, so I built this first for myself, to find out. I think some of you will find it as useful as I do.
 
+![xkcd #1205: Is it worth the time?](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
+
+Let's amortize the cost of consuming all of each year's sessions over the course of the year. Let's call it 120 sessions in a year, 45 minutes each, or 5400 minutes. 5400 minutes/weekly is about 100 minutes a week. If we estimate this app shaves 25% off linear video time, we'll stretch that to almost a 30 minutes/week savings, giving me a 5 day budget to spend on this project.
+
+[Why, indeed](http://wiki.c2.com/?PurposeOfProgramming).
+
 ## Contributing / Roadmap
 
 Replicating functionality of the official WWDC app is a non-priority of this project. Use the official app if you want the functionality it provides.
