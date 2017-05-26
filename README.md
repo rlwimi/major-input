@@ -1,8 +1,12 @@
+![MajorInput icon](./MajorInput/Assets.xcassets/AppIcon.appiconset/iTunesArtwork@2x-60@3x.png)
+
 # Major Input
 
 a novel iPad UI for quickly reading WWDC session transcripts while retaining video/presentation context
 
 ![iPad only](https://img.shields.io/badge/device-iPad%20only-blue.svg) ![iOS 10.3](https://img.shields.io/badge/iOS-10.3-blue.svg) ![Not available in the App Store](https://img.shields.io/badge/App%20Store-not%20available-red.svg) ![DIY Build](https://img.shields.io/badge/build-DIY-brightgreen.svg) ![requires Carthage](https://img.shields.io/badge/Carthage-required-yellow.svg) ![XCode 8.3.2](https://img.shields.io/badge/Xcode-8.3.2-blue.svg) ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-blue.svg)
+
+![shelf view screenshot](Resources/screenshots/shelf.png) ![majorinput view screenshot](Resources/screenshots/majorinput.png)
 
 ## Getting Started
 
