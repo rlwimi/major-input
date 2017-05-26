@@ -31,5 +31,8 @@
       <FileRef
          location = "group:Vendor/Carthage/Checkouts/SwiftyJSON/SwiftyJSON.xcodeproj">
       </FileRef>
+      <FileRef
+         location = "group:Vendor/Carthage/Checkouts/TouchVisualizer/TouchVisualizer.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>

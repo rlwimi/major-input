@@ -18,6 +18,8 @@
 		FCA2DC271EC5EC3A00427D3C /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2DC261EC5EC3A00427D3C /* PlayerView.swift */; };
 		FCA2DC291EC5EF4B00427D3C /* TouchStencilingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA2DC281EC5EF4B00427D3C /* TouchStencilingButton.swift */; };
 		FCA2DC2B1EC6765D00427D3C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCA2DC2A1EC6765D00427D3C /* Settings.bundle */; };
+		FCA2DC2F1ED8CCFB00427D3C /* TouchVisualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA2DC2D1ED8CC9800427D3C /* TouchVisualizer.framework */; };
+		FCA2DC301ED8CCFB00427D3C /* TouchVisualizer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCA2DC2D1ED8CC9800427D3C /* TouchVisualizer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCBB65B51E96B034008A8568 /* CaptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB65B41E96B034008A8568 /* CaptionCell.swift */; };
 		FCBB65B71E96B86C008A8568 /* ClassStringProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB65B61E96B86C008A8568 /* ClassStringProviding.swift */; };
 		FCBB65BB1E97298B008A8568 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBB65BA1E97298B008A8568 /* UIKitExtensions.swift */; };
@@ -90,6 +92,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FCC8AA901EB925C400A21D24 /* Haneke.framework in Embed Frameworks */,
+				FCA2DC301ED8CCFB00427D3C /* TouchVisualizer.framework in Embed Frameworks */,
 				FCC8AA921EB925CD00A21D24 /* ReactiveCocoa.framework in Embed Frameworks */,
 				FCC8AA981EB925E700A21D24 /* SwiftyJSON.framework in Embed Frameworks */,
 				FCC8AA961EB925E200A21D24 /* Result.framework in Embed Frameworks */,
@@ -114,6 +117,7 @@
 		FCA2DC281EC5EF4B00427D3C /* TouchStencilingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchStencilingButton.swift; sourceTree = "<group>"; };
 		FCA2DC2A1EC6765D00427D3C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FCA2DC2C1ED5AF4C00427D3C /* LicensePlist.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = LicensePlist.yml; sourceTree = "<group>"; };
+		FCA2DC2D1ED8CC9800427D3C /* TouchVisualizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TouchVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBB65B41E96B034008A8568 /* CaptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionCell.swift; sourceTree = "<group>"; };
 		FCBB65B61E96B86C008A8568 /* ClassStringProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassStringProviding.swift; sourceTree = "<group>"; };
 		FCBB65BA1E97298B008A8568 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCC8AA8F1EB925C400A21D24 /* Haneke.framework in Frameworks */,
+				FCA2DC2F1ED8CCFB00427D3C /* TouchVisualizer.framework in Frameworks */,
 				FCC8AA911EB925CD00A21D24 /* ReactiveCocoa.framework in Frameworks */,
 				FCC8AA971EB925E700A21D24 /* SwiftyJSON.framework in Frameworks */,
 				FCC8AA951EB925E200A21D24 /* Result.framework in Frameworks */,
@@ -287,6 +292,7 @@
 				FCC8AA821EB924A900A21D24 /* ReactiveSwift.framework */,
 				FCC8AA881EB924D200A21D24 /* Result.framework */,
 				FCC8AA8A1EB924D900A21D24 /* SwiftyJSON.framework */,
+				FCA2DC2D1ED8CC9800427D3C /* TouchVisualizer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -816,6 +822,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Carthage/Checkouts/TouchVisualizer/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MajorInput/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -832,6 +842,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/Carthage/Checkouts/TouchVisualizer/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MajorInput/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
