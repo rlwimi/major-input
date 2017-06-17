@@ -1612,7 +1612,7 @@
 		},
 		{
 			"date": "2016-06-16",
-			"description": "NSURLSession provides a rich set of methods to support uploading and downloading content via HTTP and newer HTTP-based protocols, authentication with web servers, local caching of resources, and transfers that occur in the background while your app isn't running â€” simplifying the complexities of modern day networking. Learn about new enhancements in HTTP/2, introspection capabilities with networking metrics, and security and privacy enhancements for you and your customers.",
+			"description": "NSURLSession provides a rich set of methods to support uploading and downloading content via HTTP and newer HTTP-based protocols, authentication with web servers, local caching of resources, and transfers that occur in the background while your app isn't running — simplifying the complexities of modern day networking. Learn about new enhancements in HTTP/2, introspection capabilities with networking metrics, and security and privacy enhancements for you and your customers.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2016/711tlraheg74mofg3uq/711/711_hd_nsurlsession_new_features_and_best_practices.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2016/711tlraheg74mofg3uq/711/711_sd_nsurlsession_new_features_and_best_practices.mp4",
 			"duration": 2523,
@@ -3335,7 +3335,7 @@
 		},
 		{
 			"date": "2016-06-16",
-			"description": "When Ajit Narayanan began working on technologies for children with disabilities in India in 2008, it was the beginning of an incredible journey down a rabbit hole â€” one that took him and his team on a wild ride across the worlds of electrical engineering, autism, cross-cultural communication and the mathematics of language. His journey led him to build Avaz, a wheelchair-mounted tablet to help people with disabilities communicate, then even more ambitiously, to invent FreeSpeech, an entirely new visual language that could break down language barriers altogether. Ajit will talk about the series of events that led to the creation of the Avaz and FreeSpeech apps, their impact in India and around the world (earning him the National Award for Empowerment of People with Disabilities from the President of India) and his ideas on the transformative role that apps can play in education.",
+			"description": "When Ajit Narayanan began working on technologies for children with disabilities in India in 2008, it was the beginning of an incredible journey down a rabbit hole — one that took him and his team on a wild ride across the worlds of electrical engineering, autism, cross-cultural communication and the mathematics of language. His journey led him to build Avaz, a wheelchair-mounted tablet to help people with disabilities communicate, then even more ambitiously, to invent FreeSpeech, an entirely new visual language that could break down language barriers altogether. Ajit will talk about the series of events that led to the creation of the Avaz and FreeSpeech apps, their impact in India and around the world (earning him the National Award for Empowerment of People with Disabilities from the President of India) and his ideas on the transformative role that apps can play in education.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2016/106r1nsdtsnrih7t6id/106/106_hd_talking_in_pictures_reconstructing_the_building_blocks_of_language.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2016/106r1nsdtsnrih7t6id/106/106_sd_talking_in_pictures_reconstructing_the_building_blocks_of_language.mp4",
 			"duration": 3600,
@@ -3574,7 +3574,7 @@
 		},
 		{
 			"date": "2015-06-10",
-			"description": "ReplayKit provides an easy-to-use framework that lets players record their gameplay â€” amazing plays, great victories, or solutions to tough challenges â€” and share video with other players and viewers online. Get introduced to the ReplayKit framework and see how to enable its capability for sharing game video and audio in your games and other apps. Then get the latest news about Game Center, Apple's social gaming network. Learn about the new model for pre-release testing with Game Center and enhancements for multiplayer games.",
+			"description": "ReplayKit provides an easy-to-use framework that lets players record their gameplay — amazing plays, great victories, or solutions to tough challenges — and share video with other players and viewers online. Get introduced to the ReplayKit framework and see how to enable its capability for sharing game video and audio in your games and other apps. Then get the latest news about Game Center, Apple's social gaming network. Learn about the new model for pre-release testing with Game Center and enhancements for multiplayer games.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2015/6053hq2fz0ebo0lm/605/605_hd_going_social_with_replaykit_and_game_center.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2015/6053hq2fz0ebo0lm/605/605_sd_going_social_with_replaykit_and_game_center.mp4",
 			"duration": null,
@@ -4374,7 +4374,7 @@
 		},
 		{
 			"date": "2015-06-11",
-			"description": "Auto Layout is a powerful constraint-based layout engine that can drive complex andÂ dynamic interfaces on both iOS and OS X.   Learn about the new UIStackView, now your first stop forÂ interfaces built with Auto Layout. See how to build self-sizing views using AutoÂ Layout, and gain critical insights into theÂ inner workings of Auto Layout.",
+			"description": "Auto Layout is a powerful constraint-based layout engine that can drive complex and dynamic interfaces on both iOS and OS X.   Learn about the new UIStackView, now your first stop for interfaces built with Auto Layout. See how to build self-sizing views using Auto Layout, and gain critical insights into the inner workings of Auto Layout.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2015/2187le7kpyhdff/218/218_hd_mysteries_of_auto_layout_part_1.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2015/2187le7kpyhdff/218/218_sd_mysteries_of_auto_layout_part_1.mp4",
 			"duration": null,
@@ -4652,7 +4652,7 @@
 		},
 		{
 			"date": "2015-06-11",
-			"description": "Whether it's getting contact information,Â managing a social graph, or adding a new friend, Contacts are a critical piece of many apps.Â OS X El CapitanÂ and iOS 9 now share a new Contacts API. Understand the design, goals, and benefits of this new framework.Â Gain critical insightsÂ into how to make a smooth transition for your app to this new framework.",
+			"description": "Whether it's getting contact information, managing a social graph, or adding a new friend, Contacts are a critical piece of many apps. OS X El Capitan and iOS 9 now share a new Contacts API. Understand the design, goals, and benefits of this new framework. Gain critical insights into how to make a smooth transition for your app to this new framework.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2015/223rmo6dv9hxh/223/223_hd_introducing_the_contacts_framework_for_ios_and_os_x.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2015/223rmo6dv9hxh/223/223_sd_introducing_the_contacts_framework_for_ios_and_os_x.mp4",
 			"duration": null,
@@ -5117,7 +5117,7 @@
 		},
 		{
 			"date": "2015-06-09",
-			"description": "Xcode is the development environment for creating great apps for Apple's platforms. Start the week by watching theÂ Xcode team demonstrate the latest features and improved workflows in Xcode 7. This session also provides a completeÂ overview of the in-depth developer tools topics covered at WWDC 2015.",
+			"description": "Xcode is the development environment for creating great apps for Apple's platforms. Start the week by watching the Xcode team demonstrate the latest features and improved workflows in Xcode 7. This session also provides a complete overview of the in-depth developer tools topics covered at WWDC 2015.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2015/104usewvb5m0qbwafx8p/104/104_hd_whats_new_in_xcode.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2015/104usewvb5m0qbwafx8p/104/104_sd_whats_new_in_xcode.mp4",
 			"duration": null,
@@ -6074,7 +6074,7 @@
 		},
 		{
 			"date": "2015-06-10",
-			"description": "Safari has a powerful new interface for designing responsive web experiences. Explore this great new feature and other new capabilities and improvements to the Web Inspectorâ€”WebKit's built-in development tool. Discover how you can use Safari and Web Inspector to powerfully and efficiently design, debug, and optimize for the web.",
+			"description": "Safari has a powerful new interface for designing responsive web experiences. Explore this great new feature and other new capabilities and improvements to the Web Inspector—WebKit's built-in development tool. Discover how you can use Safari and Web Inspector to powerfully and efficiently design, debug, and optimize for the web.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2015/5059xl75l59/505/505_hd_using_safari_to_deliver_and_debug_a_responsive_web_design.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2015/5059xl75l59/505/505_sd_using_safari_to_deliver_and_debug_a_responsive_web_design.mp4",
 			"duration": null,
@@ -6385,7 +6385,7 @@
 		},
 		{
 			"date": "2015-06-12",
-			"description": "With the majority of Apple's market outside of the US, it's critical to learn about the latest advancements in Internationalization support to make your app truly localized.Â Gain insight into best practices for using formatters to display information correctly, how to easily handleÂ pluralization in any language, how to avoid the most common localization pitfalls, and much more.Â Whether you are looking to significantlyÂ expand your market or want to take advantage of powerful new features for all languages, you don't want to miss this session.",
+			"description": "With the majority of Apple's market outside of the US, it's critical to learn about the latest advancements in Internationalization support to make your app truly localized. Gain insight into best practices for using formatters to display information correctly, how to easily handle pluralization in any language, how to avoid the most common localization pitfalls, and much more. Whether you are looking to significantly expand your market or want to take advantage of powerful new features for all languages, you don't want to miss this session.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2015/227s0ti458qgg/227/227_hd_whats_new_in_internationalization.mp4",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2015/227s0ti458qgg/227/227_sd_whats_new_in_internationalization.mp4",
 			"duration": null,
@@ -7814,7 +7814,7 @@
 		},
 		{
 			"date": "2014-06-04",
-			"description": "WebGL allows you to create amazing content that lifts off the page. Learn how to use WebGL to create immersive online experiences, display three-dimensional models with real-time interactivity and use imageÂ processing techniques typically thought of as unavailable on the web.",
+			"description": "WebGL allows you to create amazing content that lifts off the page. Learn how to use WebGL to create immersive online experiences, display three-dimensional models with real-time interactivity and use image processing techniques typically thought of as unavailable on the web.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2014/509xxwli42i4gs6/509/509_hd_creating_3d_interactive_content_with_webgl.mov",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2014/509xxwli42i4gs6/509/509_sd_creating_3d_interactive_content_with_webgl.mov",
 			"duration": null,
@@ -7866,7 +7866,7 @@
 		},
 		{
 			"date": "2014-06-05",
-			"description": "Web Inspector, the powerful debugging tool in WebKit, is now available to JavaScriptCore-based apps. Find out how to leverage Web Inspector in your WebKit- and JavaScriptCore-based apps on iOS andÂ OS X. Gain an overview of what's new in the JavaScript language and how to use modern JavaScript in your apps.",
+			"description": "Web Inspector, the powerful debugging tool in WebKit, is now available to JavaScriptCore-based apps. Find out how to leverage Web Inspector in your WebKit- and JavaScriptCore-based apps on iOS and OS X. Gain an overview of what's new in the JavaScript language and how to use modern JavaScript in your apps.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2014/512xxj53iuolu78/512/512_hd_web_inspector_and_modern_javascript.mov",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2014/512xxj53iuolu78/512/512_sd_web_inspector_and_modern_javascript.mov",
 			"duration": null,
@@ -7892,7 +7892,7 @@
 		},
 		{
 			"date": "2014-06-06",
-			"description": "As your user base grows, so will the variety of devices you'll need to support. People expect modern web sites to be fast, visually appealing, and rich functionally, regardless of a device's performance characteristics, resolution or size. Learn how to use the latest web technologies in WebKit and Safari to create engaging,Â attractive, andÂ adaptive layouts across all devices.",
+			"description": "As your user base grows, so will the variety of devices you'll need to support. People expect modern web sites to be fast, visually appealing, and rich functionally, regardless of a device's performance characteristics, resolution or size. Learn how to use the latest web technologies in WebKit and Safari to create engaging, attractive, and adaptive layouts across all devices.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2014/517xxlpmjgeqazd/517/517_hd_designing_responsive_web_experiences.mov",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2014/517xxlpmjgeqazd/517/517_sd_designing_responsive_web_experiences.mov",
 			"duration": null,
@@ -7918,7 +7918,7 @@
 		},
 		{
 			"date": "2014-06-03",
-			"description": "The modern WebKit framework enables developers to integrate web content into their native app experience with more features and fewer lines of code. Dive into the latest WebKit enhancements including modernÂ Objective-C features such as blocks and explicit object types, advanced bridging between JavaScript and Objective-C, increasedÂ JavaScriptÂ performance via WebKit's super-fast JIT, and moreâ€”all delivered in an API unified for both iOS and OS X.",
+			"description": "The modern WebKit framework enables developers to integrate web content into their native app experience with more features and fewer lines of code. Dive into the latest WebKit enhancements including modern Objective-C features such as blocks and explicit object types, advanced bridging between JavaScript and Objective-C, increased JavaScript performance via WebKit's super-fast JIT, and more—all delivered in an API unified for both iOS and OS X.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2014/206xxdiurnffagr/206/206_hd_introducing_the_modern_webkit_api.mov",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2014/206xxdiurnffagr/206/206_sd_introducing_the_modern_webkit_api.mov",
 			"duration": null,
@@ -8739,7 +8739,7 @@
 		},
 		{
 			"date": "2014-06-04",
-			"description": "Get acquainted with the new iTunes Connectâ€”your hub for publishing on the App Store. Learn about new ways to market with App Bundles and App Previews and how to make even better apps with App Analytics and TestFlight Beta Testing.",
+			"description": "Get acquainted with the new iTunes Connect—your hub for publishing on the App Store. Learn about new ways to market with App Bundles and App Previews and how to make even better apps with App Analytics and TestFlight Beta Testing.",
 			"download_hd": "http://devstreaming.apple.com/videos/wwdc/2014/302xxo8xxixuera/302/302_hd_the_new_itunes_connect.mov",
 			"download_sd": "http://devstreaming.apple.com/videos/wwdc/2014/302xxo8xxixuera/302/302_sd_the_new_itunes_connect.mov",
 			"duration": null,
@@ -13160,7 +13160,7 @@
 		},
 		{
 			"date": 2012,
-			"description": "Competition and reward is central to the social gaming experience. See how to adopt Game Center in your games and learn how easily you can integrate leaderboards and achievements. Dive deeper into challenges to enhance competition among friends in any game. Explore the details of game groups and see exactly how to share Game Center data between related games â€” free and paid, standard and HD, iOS and OS X.",
+			"description": "Competition and reward is central to the social gaming experience. See how to adopt Game Center in your games and learn how easily you can integrate leaderboards and achievements. Dive deeper into challenges to enhance competition among friends in any game. Explore the details of game groups and see exactly how to share Game Center data between related games — free and paid, standard and HD, iOS and OS X.",
 			"download_hd": null,
 			"download_sd": null,
 			"duration": null,
@@ -13592,7 +13592,7 @@
 		},
 		{
 			"date": 2012,
-			"description": "iOS and OS X both provide a number of abstractions to simplify and demystify networking and its inherent complexity. This session covers these abstractions in detailâ€”from a TCP connection to NSURLConnectionâ€”and explains best design practices to tune for performance and power.",
+			"description": "iOS and OS X both provide a number of abstractions to simplify and demystify networking and its inherent complexity. This session covers these abstractions in detail—from a TCP connection to NSURLConnection—and explains best design practices to tune for performance and power.",
 			"download_hd": null,
 			"download_sd": null,
 			"duration": null,
