@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC242DE51E8DE27C009754E7 /* QuickIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC242DE41E8DE27C009754E7 /* QuickIntegrationTests.swift */; };
 		FC242DEE1E8DEABB009754E7 /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC242DED1E8DEABB009754E7 /* Caption.swift */; };
+		FC549EC71EF6E63D007CBFD6 /* Session+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */; };
 		FC9066301E92FC48009363C8 /* StringExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90662F1E92FC48009363C8 /* StringExtensionsSpec.swift */; };
 		FC90663A1E93F194009363C8 /* CaptionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9066391E93F194009363C8 /* CaptionSpec.swift */; };
 		FC90663C1E93FF72009363C8 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90663B1E93FF72009363C8 /* FoundationExtensions.swift */; };
@@ -104,6 +105,7 @@
 /* Begin PBXFileReference section */
 		FC242DE41E8DE27C009754E7 /* QuickIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationTests.swift; sourceTree = "<group>"; };
 		FC242DED1E8DEABB009754E7 /* Caption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
+		FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+JSON.swift"; sourceTree = "<group>"; };
 		FC90662F1E92FC48009363C8 /* StringExtensionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsSpec.swift; sourceTree = "<group>"; };
 		FC9066391E93F194009363C8 /* CaptionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionSpec.swift; sourceTree = "<group>"; };
 		FC90663B1E93FF72009363C8 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC8AA4D1EB804AF00A21D24 /* Session.swift */,
+				FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */,
 				FC242DED1E8DEABB009754E7 /* Caption.swift */,
 			);
 			name = Model;
@@ -653,6 +656,7 @@
 				FC9451951EB1219800D42C25 /* CaptionsView.swift in Sources */,
 				FCD2C4C01EC1F738005A0C0B /* String+HTMLEntities.swift in Sources */,
 				FCBB65B51E96B034008A8568 /* CaptionCell.swift in Sources */,
+				FC549EC71EF6E63D007CBFD6 /* Session+JSON.swift in Sources */,
 				FCD5F0F41E95C7040034FD35 /* ViewInitializing.swift in Sources */,
 				FCBB65B71E96B86C008A8568 /* ClassStringProviding.swift in Sources */,
 				FCBB65BD1E98021E008A8568 /* StdLibExtensions.swift in Sources */,
