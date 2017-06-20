@@ -4,7 +4,7 @@
 
 a novel iPad UI for quickly reading WWDC session transcripts while retaining video/presentation context
 
-![iPad only](https://img.shields.io/badge/device-iPad%20only-blue.svg) ![iOS 10.3](https://img.shields.io/badge/iOS-10.3-blue.svg) ![Not available in the App Store](https://img.shields.io/badge/App%20Store-not%20available-red.svg) ![DIY Build](https://img.shields.io/badge/build-DIY-brightgreen.svg) ![requires Carthage](https://img.shields.io/badge/Carthage-required-yellow.svg) ![XCode 8.3.2](https://img.shields.io/badge/Xcode-8.3.2-blue.svg) ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-blue.svg)
+<a href="https://twitter.com/MajorInputApp"><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" width=48></a> ![iPad only](https://img.shields.io/badge/device-iPad%20only-blue.svg) ![iOS 10.3](https://img.shields.io/badge/iOS-10.3-blue.svg) ![Not available in the App Store](https://img.shields.io/badge/App%20Store-not%20available-red.svg) ![DIY Build](https://img.shields.io/badge/build-DIY-brightgreen.svg) ![requires Carthage](https://img.shields.io/badge/Carthage-required-yellow.svg) ![XCode 8.3.2](https://img.shields.io/badge/Xcode-8.3.2-blue.svg) ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-blue.svg)
 
 ![Tour GIF](Resources/screenshots/tour.gif)
 
@@ -56,13 +56,17 @@ Select a session, wait for the video to download if it hasn't already, and consu
 
 ## Why?
 
-Every developer needs a side project. This is mine.
+Every developer needs a side project for learning new things and keeping active. This is mine.
 
 Every year, the new shiny glistens, but enthusiasm fades as quickly as it came. Who has the time to watch that much video? I watch a few sessions at/during/after WWDC week, and I quickly reach a point where I think, "I'll sit down and watch a session", then I just cannot do it. Maybe I don't have an immediate need to know the things in a particular session. Maybe I spent all the time I had figuring out what order to watch, or what topic I want to watch. Maybe I feel like I already know the material and can't stomach the thought of spending all that time to catch one or two new nuggets.
 
-Reading a session transcript is still passive learning, but, at least for me, it is just that critical bit more active than being trapped in completely passive linear video time that engages my brain. Not only do I cover the material faster, I absorb the material better. Doing and playing, active learning, remains better than passive learning. Documentation and source documentation are arguably the better source of information. But sessions still represent a critical bridge from the introduction of new stuff to getting hands-on and deep.
+Reading a session transcript is still passive learning, but, at least for me, it is just that critical bit more active than being trapped in completely passive linear video time that engages my brain. Not only do I cover the material faster, I absorb the material better. Doing and playing, active learning, remains better than passive learning. Documentation and source documentation are arguably a better source of information than sessions. But sessions still represent a critical bridge from the introduction of new stuff to getting hands-on and deep.
 
-I expected this tool would make the huge (and growing yearly) corpus of sessions more accessible to me, so I built this first for myself, to find out. I think some of you will find it as useful as I do.
+I expected this tool would make the huge (and growing yearly) corpus of sessions more accessible to me, so I built this first for myself, to find out. It saves me some time and keeps me engaged, and I think some of you will find it as useful as I do.
+
+## What if you just watched session videos instead of making a tool to make it go faster?
+
+Good question!
 
 ![xkcd #1205: Is it worth the time?](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
 
@@ -92,6 +96,8 @@ For several reasons this project was an iPad app first, but there's room to expa
 
 The iOS developer community is absolutely **amazing**. Presentations from community conferences, meetups, and user groups can rival and even best the content quality of WWDC sessions. I think it would be great to see broader community presentations in this UI. And it doesn't need to stop at the iOS community, which is a small part of a much larger developer community. There's such a wealth of presentations available that I'd love to consume with this UI.
 
+_If you and/or your organization or conference has content you would like to see in the app, please get in touch with me_.
+
 #### Technical Constraints
 
 Development of this app was made feasible by a few requisite factors, which put together appear to be unique to WWDC sessions.
@@ -109,8 +115,4 @@ You can see that just about all of the other presentations now available are eit
 
 #### Accessibility
 
-While I consider this UI to be an attempt to increase accessibility in some sense, real Accessibility has not been considered beyond what's there from UIKit out of the box. I imagine the official WWDC app addresses accessibility well, and replicating its functionality is a non-priority. But I am certainly interested in novel ways and ideas about how this app can be improved and adapated to be more accessible.
-
-#### Get in touch
-
-If you want to sponsor development, and/or if you or your organization owns content and want to see it in this app, please get in touch with me.
+While I consider this UI to be an attempt to increase lowercase accessibility, real Accessibility has not been considered beyond what's there from UIKit out of the box. I imagine the official WWDC app addresses accessibility well, and replicating its functionality is a non-priority. But if you have feedback about how this app can be made more accessible, or accessible in some novel way, please let me know.
