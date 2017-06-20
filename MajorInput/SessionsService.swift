@@ -12,10 +12,10 @@ final class SessionsService {
   }
 
   lazy var sessions: [Session] = {
-    let url = Bundle.main.url(forResource: "videos.json", withExtension: nil)!
+    let url = Bundle.main.url(forResource: "sessions.json", withExtension: nil)!
     let data = try! Data(contentsOf: url)
     let json = JSON(data: data)
-    let sessions = json["sessions"].arrayValue
+    let sessions = json.arrayValue
       .flatMap(Session.init(json:))
       .sorted(by: self.defaultSortDescriptors)
 

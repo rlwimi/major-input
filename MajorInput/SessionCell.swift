@@ -33,7 +33,9 @@ final class SessionCell: UICollectionViewCell {
     self.onActionTap = onActionTap
 
     image.backgroundColor = .black
-    image.setImage(from: session.image)
+    if let url = session.image {
+      image.setImage(from: url)
+    }
 
     title.text = "\(session.number): \(session.title)"
     detail.text = session.description

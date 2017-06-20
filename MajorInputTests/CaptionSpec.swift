@@ -5,17 +5,16 @@ import Nimble
 class CaptionSpec: QuickSpec {
 
   override func spec() {
-
     let session = Session(conference: .wwdc,
                           description: "Media playback just got easier and more powerful with the introduction of AVKit on iOS. Hear how AVKit provides view-level services that give you access to the modern media capabilities of AV Foundation. Learn the best practices for playing audiovisual media on iOS and OS X.",
-                          download: URL(string: "http://devstreaming.apple.com/videos/wwdc/2014/503xx50xm4n63qe/503/503_hd_mastering_modern_media_playback.mov")!,
+                          downloadHD: URL(string: "http://devstreaming.apple.com/videos/wwdc/2014/503xx50xm4n63qe/503/503_sd_mastering_modern_media_playback.mov")!,
+                          downloadSD: URL(string: "http://devstreaming.apple.com/videos/wwdc/2014/503xx50xm4n63qe/503/503_hd_mastering_modern_media_playback.mov")!,
                           duration: nil,
                           focuses: [.macOS, .iOS],
-                          image: URL(string: "http://devstreaming.apple.com/videos/wwdc/thumbnails/d20ft1ql/2014/503/503_shelf.jpg")!,
+                          image: URL(string: "http://devstreaming.apple.com/videos/wwdc/thumbnails/d20ft1ql/2014/503/503_shelf.jpg"),
                           number: "503",
                           title: "Mastering Modern Media Playback",
                           track: .media,
-                          vtt: nil,
                           year: "2014")
 
     describe("WebVTT parsing") {

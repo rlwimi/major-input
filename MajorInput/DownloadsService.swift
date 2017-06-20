@@ -73,7 +73,7 @@ final class DownloadsService: NSObject {
   func downloadVideo(for session: Session) {
     _status(for: session).value = .downloading(progress: 0)
 
-    let task = urlSession.downloadTask(with: session.download)
+    let task = urlSession.downloadTask(with: session.downloadSD)
     downloads[key: session] = task
     task.resume()
   }
