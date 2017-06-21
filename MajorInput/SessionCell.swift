@@ -29,7 +29,7 @@ final class SessionCell: UICollectionViewCell {
     fatalError("init(coder:) has not been implemented")
   }
 
-  func configure(with session: Session, downloadStatus: Property<DownloadStatus>, onActionTap: @escaping () -> Void) {
+  func configure(with session: Session, captionsAvailable: Bool, downloadStatus: Property<DownloadStatus>, onActionTap: @escaping () -> Void) {
     self.onActionTap = onActionTap
 
     image.backgroundColor = .black
@@ -44,6 +44,8 @@ final class SessionCell: UICollectionViewCell {
     tags.text = tagTexts.flatMap({ $0 }).joined(separator: "   ")
 
     focus.text = "\(session.focuses.map({ $0.rawValue }).joined(separator: "  |  "))"
+
+    action.isHidden = (captionsAvailable == false)
 
     downloadStatus
       .producer

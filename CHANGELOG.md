@@ -1,3 +1,8 @@
+### 1.2.0
+6/20/2017
+
+[fixed] [#7](https://github.com/rlwimi/major-input/issues/7): The `DOWNLOAD` button is no longer shown for a session with missing transcript. If the session cell is selected, the user is alerted to the transcript's unavailability and given the option to check the project repo for any app update that may integrate the missing transcript.
+
 ### 1.1.1
 6/20/2017
 

@@ -1,5 +1,5 @@
 import UIKit
-import SwiftyJSON
+import ReactiveSwift
 
 final class ShelfViewController: UIViewController, ViewDowncasting {
 
@@ -16,11 +16,15 @@ final class ShelfViewController: UIViewController, ViewDowncasting {
     }
   }
 
+  fileprivate let sessionsService: SessionsService
   fileprivate let downloadsService: DownloadsService
 
+  fileprivate let application = UIApplication.shared
+
   init(dependencies: Dependencies) {
-    sessions = dependencies.sessionsService.sessions
+    sessionsService = dependencies.sessionsService
     downloadsService = dependencies.downloadsService
+    sessions = sessionsService.sessions
     super.init(nibName: nil, bundle: nil)
   }
 
@@ -61,6 +65,7 @@ extension ShelfViewController: UICollectionViewDataSource {
     let cell: SessionCell = collectionView.dequeueReusableCell(indexPath: indexPath)
     cell.configure(
       with: session,
+      captionsAvailable: sessionsService.canProvideCaptions(for: session),
       downloadStatus: status,
       onActionTap: strongify(weak: self) { `self`, _ in
         switch status.value {
@@ -87,9 +92,33 @@ extension ShelfViewController: UICollectionViewDelegateFlowLayout {
     let session = sessions[indexPath.item]
     let status = downloadsService.status(for: session)
     if case .remote = status.value {
-      downloadsService.downloadVideo(for: session)
+      if sessionsService.canProvideCaptions(for: session) {
+        downloadsService.downloadVideo(for: session)
+      } else {
+        showCaptionsUnavailableAlert()
+      }
     } else if case .downloaded(_) = status.value {
       onSelectSession?(session)
     }
+  }
+}
+
+fileprivate extension ShelfViewController {
+
+  func showCaptionsUnavailableAlert() {
+    let alert = UIAlertController(
+      title: "Transcript Unavailable",
+      message: "Perhaps the transcript is available in an app update. If not, then Apple probably has not yet captioned the video.",
+      preferredStyle: .alert
+    )
+    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+    alert.addAction(UIAlertAction(title: "Check Repo", style: .default, handler: strongify(weak: self) { `self`, _ in
+      let repoUrl = URL(string: "https://github.com/rlwimi/major-input")!
+      if self.application.canOpenURL(repoUrl) {
+        self.application.open(repoUrl)
+      }
+    }))
+
+    self.present(alert, animated: true, completion: nil)
   }
 }

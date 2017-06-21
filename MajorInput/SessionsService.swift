@@ -3,6 +3,8 @@ import SwiftyJSON
 
 final class SessionsService {
 
+  let fileManager = FileManager.default
+
   let byConference: SortDescriptor<Session> = sortDescriptor(property: { $0.conference.rawValue })
   let byYearDescending: SortDescriptor<Session> = sortDescriptor(property: { $0.year }, ascending: false)
   let byNumber: SortDescriptor<Session> = sortDescriptor(property: { $0.number })
@@ -21,6 +23,12 @@ final class SessionsService {
 
     return sessions
   }()
+
+  func canProvideCaptions(for session: Session) -> Bool {
+    let url = session.localVttUrl
+    let canProvide = fileManager.fileExists(atPath: url.path)
+    return canProvide
+  }
 
   func captions(for session: Session) -> [Caption] {
     return captions(withContentsOf: session.localVttUrl).sentencifying
@@ -88,13 +96,13 @@ final class SessionsService {
   }
 }
 
-extension Session {
+fileprivate extension Session {
   var localVttUrl: URL {
     let base = Bundle.main.url(forResource: "wwdc-session-transcripts", withExtension: nil)!
-    let vtt = base
+    let url = base
       .appendingPathComponent(year, isDirectory: true)
       .appendingPathComponent(number)
       .appendingPathExtension("vtt")
-    return vtt
+    return url
   }
 }
