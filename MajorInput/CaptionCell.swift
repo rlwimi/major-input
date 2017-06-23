@@ -35,7 +35,8 @@ extension CaptionCell { // ViewInitializing
   override func configure() {
     didSetProps()
     caption.numberOfLines = 0
-    contentView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 8, right: 16)
+    contentView.layoutMargins = UIEdgeInsets(top: 0, left: 40, bottom: 16, right: 16)
+    caption.font = UIFont.systemFont(ofSize: 24)
 }
 
   override func buildUserInterface() {
