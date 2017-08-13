@@ -9,6 +9,7 @@ github "mauriciosantos/Buckets-Swift" ~> 2.0
 github "onevcat/Kingfisher" ~> 3.0
 github "ReactiveCocoa/ReactiveCocoa" "fix-swift-runtime-infinite-recursion"
 github "Raizlabs/Anchorage" ~> 3.3
+github "sharplet/Regex" ~> 1.1
 github "SwiftyJSON/SwiftyJSON" ~> 3.1
 
 # Listed here only to include its own license in Settings. Use released binary.

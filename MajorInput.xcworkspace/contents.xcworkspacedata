@@ -26,6 +26,9 @@
          location = "group:Vendor/Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:Vendor/Carthage/Checkouts/Regex/Regex.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Vendor/Carthage/Checkouts/Result/Result.xcodeproj">
       </FileRef>
       <FileRef
