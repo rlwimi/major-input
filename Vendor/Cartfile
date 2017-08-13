@@ -1,7 +1,7 @@
 github "Quick/Quick" ~> 1.1
 github "Quick/Nimble" ~> 7.0
 
-github "rlwimi/wwdc-session-transcripts" "refetched-vtt"
+github "rlwimi/wwdc-session-transcripts" "whats-new-in-captions"
 
 # Swift 3 support is on master
 github "Haneke/HanekeSwift" "master"

@@ -1,6 +1,22 @@
 [
   {
     "focus" : [
+      "iOS",
+      "macOS",
+      "tvOS",
+      "watchOS"
+    ],
+    "id" : "101",
+    "image" : "https:\/\/www.apple.com\/apple-events\/june-2017\/meta\/og.png?201706281419",
+    "track" : "Featured",
+    "description" : "WWDC 2017 Keynote",
+    "download_sd" : "https:\/\/p-events-delivery.akamaized.net\/17qopibbefvoiuhbsefvbsefvopihb06\/vod2\/1706iobnouhbljhbsdfv.mp4",
+    "title" : "Keynote",
+    "year" : 2017,
+    "download_hd" : "https:\/\/p-events-delivery.akamaized.net\/17qopibbefvoiuhbsefvbsefvopihb06\/vod2\/1706iobnouhbljhbsdfv.mp4"
+  },
+  {
+    "focus" : [
       "iOS"
     ],
     "id" : "307",
@@ -9175,6 +9191,21 @@
     "focus" : [
       "iOS",
       "macOS",
+      "watchOS"
+    ],
+    "id" : "714",
+    "image" : "https:\/\/devimages-cdn.apple.com\/wwdc-services\/images\/7\/1576\/1576_wide_250x141_2x.jpg",
+    "track" : "System Frameworks",
+    "description" : "Apple Pay is the easy and secure way to accept payments in your app and website on iPhone, iPad, Apple Watch, and Mac. Get the latest news and updates from the Wallet and Apple Pay teams. New for this year, increase your conversions by providing feedback to users right in the Apple Pay sheet. Discover great new Wallet features like pass sharing controls, and increase customer satisfaction and sales with UI best practices.",
+    "download_sd" : "https:\/\/devstreaming-cdn.apple.com\/videos\/wwdc\/2017\/714nzbj3q51ksj\/714\/714_sd_whats_new_in_apple_pay__wallet.mp4?dl=1",
+    "title" : "What's New in Apple Pay & Wallet",
+    "year" : 2017,
+    "download_hd" : "https:\/\/devstreaming-cdn.apple.com\/videos\/wwdc\/2017\/714nzbj3q51ksj\/714\/714_hd_whats_new_in_apple_pay__wallet.mp4?dl=1"
+  },
+  {
+    "focus" : [
+      "iOS",
+      "macOS",
       "tvOS",
       "watchOS"
     ],
@@ -9233,21 +9264,6 @@
     "title" : "What's new in Apple File System",
     "year" : 2017,
     "download_hd" : "https:\/\/devstreaming-cdn.apple.com\/videos\/wwdc\/2017\/715gk347h3udl\/715\/715_hd_whats_new_in_apple_file_system.mp4?dl=1"
-  },
-  {
-    "focus" : [
-      "iOS",
-      "macOS",
-      "watchOS"
-    ],
-    "id" : "714",
-    "image" : "https:\/\/devimages-cdn.apple.com\/wwdc-services\/images\/7\/1576\/1576_wide_250x141_2x.jpg",
-    "track" : "System Frameworks",
-    "description" : "Apple Pay is the easy and secure way to accept payments in your app and website on iPhone, iPad, Apple Watch, and Mac. Get the latest news and updates from the Wallet and Apple Pay teams. New for this year, increase your conversions by providing feedback to users right in the Apple Pay sheet. Discover great new Wallet features like pass sharing controls, and increase customer satisfaction and sales with UI best practices.",
-    "download_sd" : "https:\/\/devstreaming-cdn.apple.com\/videos\/wwdc\/2017\/714nzbj3q51ksj\/714\/714_sd_whats_new_in_apple_pay__wallet.mp4?dl=1",
-    "title" : "What's new in Apple Pay & Wallet",
-    "year" : 2017,
-    "download_hd" : "https:\/\/devstreaming-cdn.apple.com\/videos\/wwdc\/2017\/714nzbj3q51ksj\/714\/714_hd_whats_new_in_apple_pay__wallet.mp4?dl=1"
   },
   {
     "focus" : [
