@@ -19,12 +19,12 @@ class VideosJsonImportingSpec: QuickSpec {
 
       it("contains 686 sessions") {
         let sessions = json.arrayValue
-        expect(sessions.count).to(equal(686))
+        expect(sessions.count).to(equal(687))
       }
 
       it("deserializes sessions") {
         let sessions = json.arrayValue.flatMap(Session.init(json:))
-        expect(sessions.count).to(equal(574)) // all - 2012 sessions = 686 - 112 = 574
+        expect(sessions.count).to(equal(575)) // all - 2012 sessions = 687 - 112 = 574
       }
     }
   }

@@ -96,7 +96,7 @@ final class SessionsService {
   }
 }
 
-fileprivate extension Session {
+extension Session {
   var localVttUrl: URL {
     let base = Bundle.main.url(forResource: "wwdc-session-transcripts", withExtension: nil)!
     let url = base
