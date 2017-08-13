@@ -1,3 +1,9 @@
+### 1.2.1
+8/13/2017
+
+[improved] Larger text size while awaiting dynamic text support.
+[new] Bumped transcripts repo to include new sessions from 2017 and 2016, along with improvements for some transcripts.
+
 ### 1.2.0
 6/20/2017
 
