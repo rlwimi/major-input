@@ -67,7 +67,7 @@ extension ShelfViewController: UICollectionViewDataSource {
       with: session,
       captionsAvailable: sessionsService.canProvideCaptions(for: session),
       downloadStatus: status,
-      onActionTap: strongify(weak: self) { `self`, _ in
+      onActionTap: strongify(weak: self) { `self` in
         switch status.value {
         case .remote:
           self.downloadsService.downloadVideo(for: session)

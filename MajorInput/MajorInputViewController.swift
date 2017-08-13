@@ -112,7 +112,7 @@ extension MajorInputViewController { // ViewInitializing
     filmstripCollectionView.isScrollEnabled = false
     captionsCollectionView.isScrollEnabled = false
 
-    captionsViewController.onTransformerDoubleTap = strongify(weak: self) { `self`, _ in
+    captionsViewController.onTransformerDoubleTap = strongify(weak: self) { `self` in
       self.togglePlayback()
     }
   }
@@ -172,7 +172,7 @@ fileprivate extension MajorInputViewController {
           value: strongify(weak: self) { `self`, images in
             thumbnails = images
           },
-          completed: strongify(weak: self) { `self`, _ in
+          completed: strongify(weak: self) { `self` in
             self.didGenerateThumbnails(thumbnails)
           }
         )

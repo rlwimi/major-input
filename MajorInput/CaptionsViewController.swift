@@ -193,7 +193,7 @@ fileprivate extension CaptionsViewController {
       else { return }
     isScrollingToCaptionTap = true
     scrollCaptions(to: caption.start, animated: true)
-    afterSystemAnimation(do: strongify(weak: self) { `self`, _ in
+    afterSystemAnimation(do: strongify(weak: self) { `self` in
       self.isScrollingToCaptionTap = false
     })
   }
