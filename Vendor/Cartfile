@@ -7,7 +7,7 @@ github "IBM-Swift/swift-html-entities" ~> 3.0
 github "krzysztofzablocki/Strongify" ~> 1.1
 github "mauriciosantos/Buckets-Swift" ~> 2.0
 github "onevcat/Kingfisher" ~> 3.0
-github "ReactiveCocoa/ReactiveCocoa" ~> 6.0
+github "ReactiveCocoa/ReactiveCocoa" "fix-swift-runtime-infinite-recursion"
 github "Raizlabs/Anchorage" ~> 3.3
 github "SwiftyJSON/SwiftyJSON" ~> 3.1
 
