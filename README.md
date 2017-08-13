@@ -13,7 +13,7 @@ a novel iPad UI for quickly reading WWDC session transcripts while retaining vid
 Build it yourself, run on your iPad. UX is not designed for the iPad Simulator.
 
 1. *Get the code*: Clone the repo, or download a zip, depending on how you want to get future updates.
-1. *Install dependencies*: Run `cd <$SRCROOT>/Vendor; carthage update --no-build --no-use-binaries`, replacing `<$SRCROOT>` with your repo/download path.
+1. *Install dependencies*: Run `cd <$SRCROOT>/Vendor; carthage bootstrap --no-build --no-use-binaries`, replacing `<$SRCROOT>` with your repo/download path.
 1. *Configure code signing*: Select the MajorInput project in the Project Navigator. For both Targets, MajorInput and MajorInputTests, select your own Development Team in the General tab Signing section.
 1. *Build and run*: Build the MajorInput scheme to your iPad as usual.
 
