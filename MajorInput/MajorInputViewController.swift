@@ -168,7 +168,7 @@ fileprivate extension MajorInputViewController {
     asset.images(for: times, size: CGSize(width: filmstripCellWidth, height: filmstripCellWidth))
       .observe(on: UIScheduler())
       .start(
-        Observer(
+        Signal.Observer(
           value: strongify(weak: self) { `self`, images in
             thumbnails = images
           },
