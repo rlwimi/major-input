@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC15DD791F40DE5500DD09F0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC15DD771F40DE0E00DD09F0 /* Kingfisher.framework */; };
+		FC15DD7A1F40DE5500DD09F0 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC15DD771F40DE0E00DD09F0 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC242DE51E8DE27C009754E7 /* QuickIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC242DE41E8DE27C009754E7 /* QuickIntegrationTests.swift */; };
 		FC242DEE1E8DEABB009754E7 /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC242DED1E8DEABB009754E7 /* Caption.swift */; };
 		FC549EC71EF6E63D007CBFD6 /* Session+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */; };
@@ -38,8 +40,6 @@
 		FCC8AA811EB9248C00A21D24 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA801EB9248C00A21D24 /* Quick.framework */; };
 		FCC8AA8C1EB925C000A21D24 /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA761EB9241F00A21D24 /* Anchorage.framework */; };
 		FCC8AA8D1EB925C000A21D24 /* Anchorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA761EB9241F00A21D24 /* Anchorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FCC8AA8F1EB925C400A21D24 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA7A1EB9242300A21D24 /* Haneke.framework */; };
-		FCC8AA901EB925C400A21D24 /* Haneke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA7A1EB9242300A21D24 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCC8AA911EB925CD00A21D24 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA841EB924BE00A21D24 /* ReactiveCocoa.framework */; };
 		FCC8AA921EB925CD00A21D24 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA841EB924BE00A21D24 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCC8AA931EB925D300A21D24 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA861EB924C600A21D24 /* ReactiveSwift.framework */; };
@@ -48,7 +48,6 @@
 		FCC8AA961EB925E200A21D24 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA881EB924D200A21D24 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCC8AA971EB925E700A21D24 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA8A1EB924D900A21D24 /* SwiftyJSON.framework */; };
 		FCC8AA981EB925E700A21D24 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCC8AA8A1EB924D900A21D24 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FCC8AA9A1EB936C800A21D24 /* HanekeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC8AA991EB936C800A21D24 /* HanekeExtensions.swift */; };
 		FCD1C4C01EAAB1DD00C22DEE /* PlayerSeeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD1C4BF1EAAB1DD00C22DEE /* PlayerSeeker.swift */; };
 		FCD2292A1EBDEE5000037D43 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD229291EBDEE5000037D43 /* AppNavigationController.swift */; };
 		FCD2292C1EBDEE9600037D43 /* DependencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2292B1EBDEE9600037D43 /* DependencyProtocols.swift */; };
@@ -90,11 +89,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FCC8AA901EB925C400A21D24 /* Haneke.framework in Embed Frameworks */,
 				FCC8AA921EB925CD00A21D24 /* ReactiveCocoa.framework in Embed Frameworks */,
 				FCC8AA981EB925E700A21D24 /* SwiftyJSON.framework in Embed Frameworks */,
 				FCC8AA961EB925E200A21D24 /* Result.framework in Embed Frameworks */,
 				FCC8AA8D1EB925C000A21D24 /* Anchorage.framework in Embed Frameworks */,
+				FC15DD7A1F40DE5500DD09F0 /* Kingfisher.framework in Embed Frameworks */,
 				FCC8AA941EB925D300A21D24 /* ReactiveSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -103,6 +102,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC15DD771F40DE0E00DD09F0 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC242DE41E8DE27C009754E7 /* QuickIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickIntegrationTests.swift; sourceTree = "<group>"; };
 		FC242DED1E8DEABB009754E7 /* Caption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
 		FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+JSON.swift"; sourceTree = "<group>"; };
@@ -143,7 +143,6 @@
 		FCC8AA861EB924C600A21D24 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC8AA881EB924D200A21D24 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC8AA8A1EB924D900A21D24 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCC8AA991EB936C800A21D24 /* HanekeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanekeExtensions.swift; sourceTree = "<group>"; };
 		FCD1C4BF1EAAB1DD00C22DEE /* PlayerSeeker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSeeker.swift; sourceTree = "<group>"; };
 		FCD229291EBDEE5000037D43 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		FCD2292B1EBDEE9600037D43 /* DependencyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyProtocols.swift; sourceTree = "<group>"; };
@@ -187,11 +186,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC8AA8F1EB925C400A21D24 /* Haneke.framework in Frameworks */,
 				FCC8AA911EB925CD00A21D24 /* ReactiveCocoa.framework in Frameworks */,
 				FCC8AA971EB925E700A21D24 /* SwiftyJSON.framework in Frameworks */,
 				FCC8AA951EB925E200A21D24 /* Result.framework in Frameworks */,
 				FCC8AA8C1EB925C000A21D24 /* Anchorage.framework in Frameworks */,
+				FC15DD791F40DE5500DD09F0 /* Kingfisher.framework in Frameworks */,
 				FCC8AA931EB925D300A21D24 /* ReactiveSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +279,7 @@
 		FCC8AA7D1EB9247B00A21D24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC15DD771F40DE0E00DD09F0 /* Kingfisher.framework */,
 				FCC8AA761EB9241F00A21D24 /* Anchorage.framework */,
 				FCC8AA7A1EB9242300A21D24 /* Haneke.framework */,
 				FCC8AA7E1EB9247B00A21D24 /* Nimble.framework */,
@@ -431,7 +431,6 @@
 				FCD5F0E71E959F1E0034FD35 /* AVFoundationExtensions.swift */,
 				FCD5F10C1E95ED120034FD35 /* CoreGraphicsExtensions.swift */,
 				FC90663B1E93FF72009363C8 /* FoundationExtensions.swift */,
-				FCC8AA991EB936C800A21D24 /* HanekeExtensions.swift */,
 				FCBB65BC1E98021E008A8568 /* StdLibExtensions.swift */,
 				FCBB65BA1E97298B008A8568 /* UIKitExtensions.swift */,
 			);
@@ -667,7 +666,6 @@
 				FCBB65BF1E983103008A8568 /* FilmstripCell.swift in Sources */,
 				FCD5F0F01E95C4040034FD35 /* ViewDowncasting.swift in Sources */,
 				FC90663C1E93FF72009363C8 /* FoundationExtensions.swift in Sources */,
-				FCC8AA9A1EB936C800A21D24 /* HanekeExtensions.swift in Sources */,
 				FCBD73B51EBBDCD30034FEFD /* Bimap.swift in Sources */,
 				FCC8AA521EB8EE0400A21D24 /* ShelfView.swift in Sources */,
 				FCC8AA4E1EB804AF00A21D24 /* Session.swift in Sources */,

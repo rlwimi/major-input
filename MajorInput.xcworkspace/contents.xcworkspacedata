@@ -11,7 +11,7 @@
          location = "group:Vendor/Carthage/Checkouts/Anchorage/Anchorage.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Anchorage/../HanekeSwift/Haneke.xcodeproj">
+         location = "group:Vendor/Carthage/Checkouts/Kingfisher/Kingfisher.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Vendor/Carthage/Checkouts/Nimble/Nimble.xcodeproj">

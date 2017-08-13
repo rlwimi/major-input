@@ -74,12 +74,6 @@ extension UIColor {
   }()
 }
 
-extension UIImageView {
-  func setImage(from url: URL) {
-    hnk_setImageFromURL(url, format: .original)
-  }
-}
-
 extension UILayoutGuide {
   convenience init(identifier: String) {
     self.init()

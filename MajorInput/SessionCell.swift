@@ -1,6 +1,6 @@
 import UIKit
 import Anchorage
-import Haneke
+import Kingfisher
 import ReactiveSwift
 
 final class SessionCell: UICollectionViewCell {
@@ -34,7 +34,7 @@ final class SessionCell: UICollectionViewCell {
 
     image.backgroundColor = .black
     if let url = session.image {
-      image.setImage(from: url)
+      image.kf.setImage(with: url)
     }
 
     title.text = "\(session.number): \(session.title)"
@@ -68,7 +68,7 @@ final class SessionCell: UICollectionViewCell {
 
   override func prepareForReuse() {
     super.prepareForReuse()
-    image.hnk_cancelSetImage()
+    image.kf.cancelDownloadTask()
     image.image = nil
   }
 }
