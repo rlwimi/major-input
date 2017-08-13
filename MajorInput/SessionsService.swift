@@ -1,4 +1,5 @@
 import Foundation
+import Regex
 import SwiftyJSON
 
 final class SessionsService {
@@ -48,6 +49,8 @@ final class SessionsService {
     // Collects `Caption` line-by-line
     var current: Caption?
 
+    let regex = Regex("^(\\d\\d):(\\d\\d):(\\d\\d)[,.](\\d\\d\\d) --> (\\d\\d):(\\d\\d):(\\d\\d)[,.](\\d\\d\\d).*$")
+
     vtt.enumerateLines { line, _ in
       if current != nil {
         if line.isEmpty {
@@ -65,23 +68,21 @@ final class SessionsService {
           }
         }
       } else {
-        let regexString = "^(\\d\\d):(\\d\\d):(\\d\\d)[,.](\\d\\d\\d) --> (\\d\\d):(\\d\\d):(\\d\\d)[,.](\\d\\d\\d).*$"
-        let regex = try! NSRegularExpression(pattern: regexString)
-        let result = regex.firstMatch(in: line, range: NSRange(location: 0, length: line.utf16.count))
-        if let result = result {
-          let startHours = String(line.utf16[String.UTF16Index(result.rangeAt(1).location)..<String.UTF16Index(result.rangeAt(1).location + result.rangeAt(1).length)])
-          let startMinutes = String(line.utf16[String.UTF16Index(result.rangeAt(2).location)..<String.UTF16Index(result.rangeAt(2).location + result.rangeAt(2).length)])
-          let startSeconds = String(line.utf16[String.UTF16Index(result.rangeAt(3).location)..<String.UTF16Index(result.rangeAt(3).location + result.rangeAt(3).length)])
-          let startMilliseconds = String(line.utf16[String.UTF16Index(result.rangeAt(4).location)..<String.UTF16Index(result.rangeAt(4).location + result.rangeAt(4).length)])
-
-          let endHours = String(line.utf16[String.UTF16Index(result.rangeAt(5).location)..<String.UTF16Index(result.rangeAt(5).location + result.rangeAt(5).length)])
-          let endMinutes = String(line.utf16[String.UTF16Index(result.rangeAt(6).location)..<String.UTF16Index(result.rangeAt(6).location + result.rangeAt(6).length)])
-          let endSeconds = String(line.utf16[String.UTF16Index(result.rangeAt(7).location)..<String.UTF16Index(result.rangeAt(7).location + result.rangeAt(7).length)])
-          let endMilliseconds = String(line.utf16[String.UTF16Index(result.rangeAt(8).location)..<String.UTF16Index(result.rangeAt(8).location + result.rangeAt(8).length)])
-
+        if
+          let match = regex.firstMatch(in: line),
+          match.captures.count == 8,
+          let startHours = match.captures[0],
+          let startMinutes = match.captures[1],
+          let startSeconds = match.captures[2],
+          let startMilliseconds = match.captures[3],
+          let endHours = match.captures[4],
+          let endMinutes = match.captures[5],
+          let endSeconds = match.captures[6],
+          let endMilliseconds = match.captures[7]
+        {
           current = Caption()
-          current?.start = TimeInterval(hours: Int(startHours!)!, minutes: Int(startMinutes!)!, seconds: Int(startSeconds!)!, milliseconds: Int(startMilliseconds!)!)
-          current?.end = TimeInterval(hours: Int(endHours!)!, minutes: Int(endMinutes!)!, seconds: Int(endSeconds!)!, milliseconds: Int(endMilliseconds!)!)
+          current?.start = TimeInterval(hours: Int(startHours)!, minutes: Int(startMinutes)!, seconds: Int(startSeconds)!, milliseconds: Int(startMilliseconds)!)
+          current?.end = TimeInterval(hours: Int(endHours)!, minutes: Int(endMinutes)!, seconds: Int(endSeconds)!, milliseconds: Int(endMilliseconds)!)
         }
       }
     }
