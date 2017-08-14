@@ -1,27 +1,29 @@
-name: Anchorage, nameSpecified: , owner: Raizlabs, version: 3.3.0
+name: Anchorage, nameSpecified: , owner: Raizlabs, version: 3108a37
 
 name: Buckets-Swift, nameSpecified: , owner: mauriciosantos, version: 2.0.0
 
-name: HanekeSwift, nameSpecified: , owner: Haneke, version: 694d6df
+name: Kingfisher, nameSpecified: , owner: onevcat, version: 3.10.4
 
 name: LicensePlist, nameSpecified: , owner: mono0926, version: 1.4.2
 
-name: Nimble, nameSpecified: , owner: Quick, version: v7.0.0
+name: Nimble, nameSpecified: , owner: Quick, version: v7.0.1
 
 name: Quick, nameSpecified: , owner: Quick, version: v1.1.0
 
-name: Result, nameSpecified: , owner: antitypical, version: 3.2.1
+name: Regex, nameSpecified: , owner: sharplet, version: 1.1.0
 
-name: Strongify, nameSpecified: , owner: krzysztofzablocki, version: 1.1
+name: Result, nameSpecified: , owner: antitypical, version: 3.2.3
+
+name: Strongify, nameSpecified: , owner: krzysztofzablocki, version: 1.2
 
 name: SwiftyJSON, nameSpecified: , owner: SwiftyJSON, version: 3.1.4
 
-name: swift-html-entities, nameSpecified: , owner: IBM-Swift, version: 3.0.3
+name: swift-html-entities, nameSpecified: , owner: rlwimi, version: 3943db5
 
-name: ReactiveSwift, nameSpecified: , owner: ReactiveCocoa, version: 1.1.1
+name: ReactiveSwift, nameSpecified: , owner: ReactiveCocoa, version: 2.0.0
 
-name: ReactiveCocoa, nameSpecified: , owner: ReactiveCocoa, version: 5.0.3
+name: ReactiveCocoa, nameSpecified: , owner: ReactiveCocoa, version: fa18d14
 
 add-version-numbers: false
 
-LicensePlist Version: 1.4.1
+LicensePlist Version: 1.4.5
