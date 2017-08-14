@@ -26,27 +26,27 @@ extension UIView: LayingOut, LayoutForcing {}
 extension CALayer: LayingOut, LayoutForcing {}
 
 extension UICollectionView {
-  func registerReusableCell<T: UICollectionViewCell>(_: T.Type) where T: ClassStringProviding {
+  func registerReusableCell<T: UICollectionViewCell>(_: T.Type) {
     register(T.self, forCellWithReuseIdentifier: T.classString)
   }
 
-  func registerHeader<T: UICollectionReusableView>(_: T.Type) where T: ClassStringProviding {
+  func registerHeader<T: UICollectionReusableView>(_: T.Type) {
     register(T.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: T.classString)
   }
 
-  func registerFooter<T: UICollectionReusableView>(_: T.Type) where T: ClassStringProviding {
+  func registerFooter<T: UICollectionReusableView>(_: T.Type) {
     register(T.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: T.classString)
   }
 
-  func dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: ClassStringProviding {
+  func dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T {
     return dequeueReusableCell(withReuseIdentifier: T.classString, for: indexPath) as! T
   }
 
-  func dequeueReusableSectionHeader<T: UICollectionReusableView>(indexPath: IndexPath) -> T where T: ClassStringProviding {
+  func dequeueReusableSectionHeader<T: UICollectionReusableView>(indexPath: IndexPath) -> T {
     return dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: T.classString, for: indexPath) as! T
   }
 
-  func dequeueReusableSectionFooter<T: UICollectionReusableView>(indexPath: IndexPath) -> T where T: ClassStringProviding {
+  func dequeueReusableSectionFooter<T: UICollectionReusableView>(indexPath: IndexPath) -> T {
     return dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: T.classString, for: indexPath) as! T
   }
 }
