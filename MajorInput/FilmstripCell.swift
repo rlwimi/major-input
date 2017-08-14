@@ -40,10 +40,10 @@ extension FilmstripCell { // ViewInitializing
 
   override func activateDefaultLayout() {
     // Respect `thumbnail.size`.
-    image.setContentHuggingPriority(UILayoutPriority.required, for: .horizontal)
-    image.setContentHuggingPriority(UILayoutPriority.required, for: .vertical)
-    image.setContentCompressionResistancePriority(UILayoutPriority.required, for: .horizontal)
-    image.setContentCompressionResistancePriority(UILayoutPriority.required, for: .vertical)
+    image.setContentHuggingPriority(.required, for: .horizontal)
+    image.setContentHuggingPriority(.required, for: .vertical)
+    image.setContentCompressionResistancePriority(.required, for: .horizontal)
+    image.setContentCompressionResistancePriority(.required, for: .vertical)
 
     image.edgeAnchors == contentView.edgeAnchors
   }

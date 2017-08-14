@@ -31,7 +31,7 @@ extension AVAsset {
 
   /// Convenience accessor when assuming a single video track is available
   var videoTrack: AVAssetTrack {
-    guard let videoTrack = tracks.first(where: { $0.mediaType == AVMediaType.video })
+    guard let videoTrack = tracks.first(where: { $0.mediaType == .video })
       else { fatalError("Video track unavailable for asset: \(String(reflecting: self))") }
     return videoTrack
   }

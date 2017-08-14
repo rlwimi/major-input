@@ -58,7 +58,7 @@ final class SessionCell: UICollectionViewCell {
   override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
     layoutAttributes.frame.size = contentView.systemLayoutSizeFitting(
       layoutAttributes.frame.size,
-      withHorizontalFittingPriority: UILayoutPriority.required,
+      withHorizontalFittingPriority: .required,
       verticalFittingPriority: UILayoutPriority(1)
     )
     contentWidth.constant = layoutAttributes.frame.size.width
@@ -161,7 +161,7 @@ extension SessionCell { // ViewInitializing
 
     progress.edgeAnchors == action.edgeAnchors
     // ^^^ will vertically squeeze button, so...
-    action.setContentCompressionResistancePriority(UILayoutPriority.required, for: .vertical)
+    action.setContentCompressionResistancePriority(.required, for: .vertical)
 
     spinner.centerYAnchor == action.centerYAnchor
     spinner.trailingAnchor == action.leadingAnchor - 8

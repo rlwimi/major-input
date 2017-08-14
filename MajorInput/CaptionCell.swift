@@ -60,7 +60,7 @@ extension CaptionCell { // UICollectionViewCell
   override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
     layoutAttributes.frame.size = contentView.systemLayoutSizeFitting(
       layoutAttributes.frame.size,
-      withHorizontalFittingPriority: UILayoutPriority.required,
+      withHorizontalFittingPriority: .required,
       verticalFittingPriority: UILayoutPriority(1)
     )
     contentWidth.constant = layoutAttributes.frame.size.width
