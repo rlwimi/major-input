@@ -27,7 +27,7 @@ import UIKit
 /// super first in these methods meets that need. If you encounter such a design consider whether
 /// you find dependency-injection via subclass to be a code smell, whether you reallyy want to deal
 /// with the complexity from interactions of merging two hierarchies (subview and subclass).
-protocol ViewInitializing {
+@objc protocol ViewInitializing {
 
   /// Configure self and subviews.
   func configure()
@@ -59,7 +59,7 @@ extension ViewInitializing {
 /// class implements the method.
 
 extension UIView: ViewInitializing {
-  @objc func configure() {}
+  func configure() {}
   func buildUserInterface() {}
   func activateDefaultLayout() {}
 }
