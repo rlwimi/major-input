@@ -45,7 +45,7 @@ extension CaptionCell { // ViewInitializing
 
   override func activateDefaultLayout() {
     // Content will determine height. Minimally hugging prevents unwanted sprawl.
-    contentView.heightAnchor == 0 ~ UILayoutPriority(1)
+    contentView.heightAnchor == 0 ~ UILayoutPriority(1).rawValue
 
     // Autosizing will inject the width,
     contentWidth = (contentView.widthAnchor == 0)
@@ -60,7 +60,7 @@ extension CaptionCell { // UICollectionViewCell
   override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
     layoutAttributes.frame.size = contentView.systemLayoutSizeFitting(
       layoutAttributes.frame.size,
-      withHorizontalFittingPriority: UILayoutPriorityRequired,
+      withHorizontalFittingPriority: UILayoutPriority.required,
       verticalFittingPriority: UILayoutPriority(1)
     )
     contentWidth.constant = layoutAttributes.frame.size.width

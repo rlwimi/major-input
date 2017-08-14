@@ -3,7 +3,7 @@ github "Quick/Nimble" ~> 7.0
 
 github "rlwimi/wwdc-session-transcripts" "whats-new-in-captions"
 
-github "IBM-Swift/swift-html-entities" ~> 3.0
+github "rlwimi/swift-html-entities" "swift-4.0"
 github "krzysztofzablocki/Strongify" ~> 1.1
 github "mauriciosantos/Buckets-Swift" ~> 2.0
 github "onevcat/Kingfisher" ~> 3.0

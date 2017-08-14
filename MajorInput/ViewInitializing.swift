@@ -59,7 +59,7 @@ extension ViewInitializing {
 /// class implements the method.
 
 extension UIView: ViewInitializing {
-  func configure() {}
+  @objc func configure() {}
   func buildUserInterface() {}
   func activateDefaultLayout() {}
 }
