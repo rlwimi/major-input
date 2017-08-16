@@ -28,12 +28,6 @@ final class AppNavigationController: UINavigationController {
       self.shelfDidSelect(session)
     }
   }
-
-  override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    shelf.downcastView.collection.contentInset =
-      .init(top: topLayoutGuide.length + navigationBar.frame.height, left: 0, bottom: 0, right: 0)
-  }
 }
 
 fileprivate extension AppNavigationController {

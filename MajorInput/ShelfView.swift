@@ -34,6 +34,6 @@ extension ShelfView { // ViewInitializing
   }
 
   override func activateDefaultLayout() {
-    collection.edgeAnchors == self.edgeAnchors
+    collection.edgeAnchors == safeAreaLayoutGuide.edgeAnchors
   }
 }

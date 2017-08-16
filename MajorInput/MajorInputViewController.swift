@@ -102,7 +102,6 @@ final class MajorInputViewController: UIViewController, ViewDowncasting {
 extension MajorInputViewController { // ViewInitializing
   override func configure() {
     title = "\(session.conference.rawValue) \(session.year) | \(session.number) | \(session.title)"
-    automaticallyAdjustsScrollViewInsets = false
 
     playerView.setShowsOverlay(false)
 

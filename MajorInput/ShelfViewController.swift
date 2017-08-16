@@ -45,7 +45,6 @@ final class ShelfViewController: UIViewController, ViewDowncasting {
 extension ShelfViewController { // ViewInitializing
   override func configure() {
     title = "MajorInput"
-    automaticallyAdjustsScrollViewInsets = false
     
     downcastView.collection.dataSource = self
     downcastView.collection.delegate = self
