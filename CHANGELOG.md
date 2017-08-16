@@ -1,3 +1,9 @@
+### 1.3.0
+8/15/2017
+
+[new] Migrated to Swift 4.
+[new] Deployment target iOS 11.
+
 ### 1.2.1
 8/13/2017
 

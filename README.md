@@ -4,7 +4,7 @@
 
 a novel iPad UI for quickly reading WWDC session transcripts while retaining video/presentation context
 
-<a href="https://twitter.com/MajorInputApp"><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" width=48></a> ![iPad only](https://img.shields.io/badge/device-iPad%20only-blue.svg) ![iOS 10.3](https://img.shields.io/badge/iOS-10.3-blue.svg) ![Not available in the App Store](https://img.shields.io/badge/App%20Store-not%20available-red.svg) ![DIY Build](https://img.shields.io/badge/build-DIY-brightgreen.svg) ![requires Carthage](https://img.shields.io/badge/Carthage-required-yellow.svg) ![XCode 8.3.2](https://img.shields.io/badge/Xcode-8.3.2-blue.svg) ![Swift 3.1](https://img.shields.io/badge/Swift-3.1-blue.svg)
+<a href="https://twitter.com/MajorInputApp"><img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" width=48></a> ![iPad only](https://img.shields.io/badge/device-iPad%20only-blue.svg) ![iOS 11](https://img.shields.io/badge/iOS-11-blue.svg) ![Not available in the App Store](https://img.shields.io/badge/App%20Store-not%20available-red.svg) ![DIY Build](https://img.shields.io/badge/build-DIY-brightgreen.svg) ![requires Carthage](https://img.shields.io/badge/Carthage-required-yellow.svg) ![XCode 9](https://img.shields.io/badge/Xcode-9-blue.svg) ![Swift 4](https://img.shields.io/badge/Swift-4-blue.svg)
 
 ![Tour GIF](Resources/screenshots/tour.gif)
 
