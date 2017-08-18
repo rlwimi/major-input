@@ -17,7 +17,7 @@ class CaptionSpec: QuickSpec {
                           track: .media,
                           year: "2014")
 
-    describe("WebVTT parsing") {
+    describe("CaptionsLoader") {
 
       var captions: [Caption]!
 
@@ -37,10 +37,10 @@ class CaptionSpec: QuickSpec {
         //  00:45:37.516 --> 00:45:42.480 A:middle
         //  [ Applause ]
 
-        captions = SessionsService().captions(withContentsOf: session.localVttUrl)
+        captions = CaptionsLoader(forSession: session.number, from: session.year)?.captions ?? []
       }
 
-      it("provides captions") {
+      it("loads raw captions") {
 
         expect(captions.count).to(equal(898))
 
@@ -86,22 +86,22 @@ class CaptionSpec: QuickSpec {
       }
     }
 
-    describe("sentencifying") {
+    describe("SessionsService") {
 
-      var captions: [Caption]!
-      var sentences: [Caption]!
+      var rawCaptions: [Caption]!
+      var mergedCaptions: [Caption]!
 
       beforeEach {
-        captions = SessionsService().captions(withContentsOf: session.localVttUrl)
-        sentences = captions.sentencifying
+        rawCaptions = CaptionsLoader(forSession: session.number, from: session.year)?.captions ?? []
+        mergedCaptions = SessionsService().captions(for: session)
       }
 
-      it("does not merge into square-bracketed texts") {
+      it("does not merge into captions with square-bracketed text") {
 
         //  00:21:49.516 --> 00:21:55.546 A:middle
         //  [ Applause ]
 
-        expect(sentences[170]).to(equal(captions[325]))
+        expect(mergedCaptions[170]).to(equal(rawCaptions[325]))
       }
 
       it("merges captions not ending in terminal point") {
@@ -123,7 +123,7 @@ class CaptionSpec: QuickSpec {
           end: TimeInterval(seconds: 25, milliseconds: 916),
           text: "And if you are already using or planning to adopt AVKit or AVFoundation in your iOS or OS X applications, this is the right session for you."
         )
-        expect(sentences[3]).to(equal(merged))
+        expect(mergedCaptions[3]).to(equal(merged))
       }
     }
   }
