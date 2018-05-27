@@ -45,7 +45,7 @@ extension CaptionCell { // ViewInitializing
 
   override func activateDefaultLayout() {
     // Content will determine height. Minimally hugging prevents unwanted sprawl.
-    contentView.heightAnchor == 0 ~ .custom(1)
+    contentView.heightAnchor == 0 ~ Priority(1)
 
     // Autosizing will inject the width,
     contentWidth = (contentView.widthAnchor == 0)

@@ -21,7 +21,7 @@ extension AVAsset {
 
         frames[time] = UIImage(cgImage: cgImage)
         generatingTimes.remove(at: index)
-        observer.send(value: requestedTimes.flatMap { frames[$0] })
+        observer.send(value: requestedTimes.compactMap { frames[$0] })
         if generatingTimes.isEmpty {
           observer.sendCompleted()
         }

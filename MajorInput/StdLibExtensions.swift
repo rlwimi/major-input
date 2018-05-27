@@ -24,7 +24,7 @@ extension String {
 
 extension String {
   var endsInTerminalPoint: Bool {
-    guard let last = self.trimmingCharacters(in: .whitespacesAndNewlines).characters.last
+    guard let last = self.trimmingCharacters(in: .whitespacesAndNewlines).last
       else { return false }
     return String(last).rangeOfCharacter(from: .terminalPunctuation) != nil
   }
@@ -32,7 +32,7 @@ extension String {
 
 extension String {
   var isBracketed: Bool {
-    let trimmed = self.trimmingCharacters(in: .whitespacesAndNewlines).characters
+    let trimmed = self.trimmingCharacters(in: .whitespacesAndNewlines)
     return trimmed.isEmpty == false && trimmed.first! == "[" && trimmed.last! == "]"
   }
 }

@@ -146,7 +146,6 @@ fileprivate extension MajorInputViewController {
     DynamicProperty<Int>(object: player, keyPath: #keyPath(AVPlayer.status))
       .producer
       .take(during: reactive.lifetime)
-      .skipNil()
       .map(AVPlayerStatus.init(rawValue:))
       .skipNil()
       .observe(on: UIScheduler())
@@ -240,7 +239,6 @@ fileprivate extension MajorInputViewController {
     DynamicProperty<CGPoint>(object: filmstripViewController.downcastView, keyPath: #keyPath(UIScrollView.contentOffset))
       .producer
       .take(during: reactive.lifetime)
-      .skipNil()
       .observe(on: UIScheduler())
       .startWithValues(strongify(weak: self) { `self`, _ in
         self.filmstripDidScroll()

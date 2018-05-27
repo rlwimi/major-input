@@ -60,7 +60,7 @@ extension TimeInterval {
     let minutesText = formatter.string(from: minutes as NSNumber)
     let secondsText = formatter.string(from: seconds as NSNumber)
 
-    let text = [hoursText, minutesText, secondsText].flatMap { $0 }.joined(separator: ":")
+    let text = [hoursText, minutesText, secondsText].compactMap { $0 }.joined(separator: ":")
     return text
   }
 }

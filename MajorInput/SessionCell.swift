@@ -41,7 +41,7 @@ final class SessionCell: UICollectionViewCell {
     detail.text = session.description
 
     let tagTexts: [String?] = [session.durationText, session.track.rawValue, session.year]
-    tags.text = tagTexts.flatMap({ $0 }).joined(separator: "   ")
+    tags.text = tagTexts.compactMap({ $0 }).joined(separator: "   ")
 
     focus.text = "\(session.focuses.map({ $0.rawValue }).joined(separator: "  |  "))"
 
@@ -118,7 +118,7 @@ extension SessionCell { // ViewInitializing
 
   override func activateDefaultLayout() {
     // Content will determine height. Minimally hugging prevents unwanted sprawl.
-    contentView.heightAnchor == 0 ~ .custom(2)
+    contentView.heightAnchor == 0 ~ Priority(2)
 
     // Autosizing will inject the width,
     contentWidth = (contentView.widthAnchor == 0)

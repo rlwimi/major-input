@@ -1,3 +1,9 @@
+### 1.4.0
+5/27/2018
+
+[new] Migrated to Swift 4.2.
+[improved] Back to mainline for dependencies that had Swift 4 migration issues.
+
 ### 1.3.0
 8/15/2017
 

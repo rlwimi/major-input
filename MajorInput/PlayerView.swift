@@ -160,7 +160,6 @@ fileprivate extension PlayerView {
     DynamicProperty<Int>(object: player, keyPath: #keyPath(AVPlayer.status))
       .producer
       .take(during: reactive.lifetime)
-      .skipNil()
       .uniqueValues()
       .map(AVPlayerStatus.init(rawValue:))
       .skipNil()

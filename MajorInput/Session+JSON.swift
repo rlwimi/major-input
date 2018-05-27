@@ -9,7 +9,7 @@ extension Session {
       let description = json["description"].string,
       let downloadSD = json["download_sd"].url,
       let downloadHD = json["download_hd"].url,
-      let focuses = json["focus"].array?.flatMap({ $0.string }).flatMap(Focus.init(rawValue:)),
+      let focuses = json["focus"].array?.compactMap({ $0.string }).compactMap(Focus.init(rawValue:)),
       let number = json["id"].string,
       let title = json["title"].string,
       let trackString = json["track"].string,

@@ -226,7 +226,6 @@ fileprivate extension CaptionsViewController {
     DynamicProperty<CGPoint>(object: downcastView.captions, keyPath: #keyPath(UIScrollView.contentOffset))
       .producer
       .take(during: reactive.lifetime)
-      .skipNil()
       .observe(on: UIScheduler())
       .startWithValues(strongify(weak: self) { `self`, _ in
         self.captionsDidScroll()
@@ -237,7 +236,6 @@ fileprivate extension CaptionsViewController {
     DynamicProperty<CGFloat>(object: transformerY, keyPath: #keyPath(NSLayoutConstraint.constant))
       .producer
       .take(during: reactive.lifetime)
-      .skipNil()
       .observe(on: UIScheduler())
       .startWithValues(strongify(weak: self) { `self`, _ in
         self.captionsDidScroll()
