@@ -14,7 +14,7 @@ class VideosJsonImportingSpec: QuickSpec {
       beforeEach {
         let url = Bundle.main.url(forResource: "sessions.json", withExtension: nil)!
         let data = try! Data(contentsOf: url)
-        json = JSON(data: data)
+        json = try! JSON(data: data)
       }
 
       it("contains 686 sessions") {
@@ -23,7 +23,7 @@ class VideosJsonImportingSpec: QuickSpec {
       }
 
       it("deserializes sessions") {
-        let sessions = json.arrayValue.flatMap(Session.init(json:))
+        let sessions = json.arrayValue.compactMap(Session.init(json:))
         expect(sessions.count).to(equal(575)) // all - 2012 sessions = 687 - 112 = 574
       }
     }
