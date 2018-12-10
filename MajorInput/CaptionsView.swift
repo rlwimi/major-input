@@ -30,9 +30,9 @@ extension CaptionsView { // ViewInitializing
     captions.backgroundColor = .white
     captions.contentInset = .zero
     captions.showsVerticalScrollIndicator = false
-    captions.decelerationRate = UIScrollViewDecelerationRateFast
+    captions.decelerationRate = UIScrollView.DecelerationRate.fast
 
-    captionsLayout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+    captionsLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
     captionsLayout.minimumInteritemSpacing = 0
     captionsLayout.minimumLineSpacing = 0
 

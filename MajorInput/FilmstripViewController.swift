@@ -31,7 +31,7 @@ extension FilmstripViewController { // ViewInitializing
   override func configure() {
     downcastView.backgroundColor = .black
     downcastView.contentInset = .zero
-    downcastView.decelerationRate = UIScrollViewDecelerationRateFast
+    downcastView.decelerationRate = UIScrollView.DecelerationRate.fast
 
     downcastView.dataSource = self
     downcastView.registerReusableCell(FilmstripCell.self)

@@ -24,7 +24,7 @@ extension ShelfView { // ViewInitializing
     collection.backgroundColor = .white
     collection.contentInset = .zero
 
-    layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+    layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
     layout.minimumInteritemSpacing = 0
     layout.minimumLineSpacing = 0
   }

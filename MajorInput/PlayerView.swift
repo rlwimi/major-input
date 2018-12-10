@@ -54,7 +54,7 @@ final class PlayerView: UIView {
 
   override func layoutSubviews() {
     super.layoutSubviews()
-    bringSubview(toFront: overlayToggle)
+    bringSubviewToFront(overlayToggle)
   }
 }
 
@@ -161,7 +161,7 @@ fileprivate extension PlayerView {
       .producer
       .take(during: reactive.lifetime)
       .uniqueValues()
-      .map(AVPlayerStatus.init(rawValue:))
+      .map(AVPlayer.Status.init(rawValue:))
       .skipNil()
       .observe(on: UIScheduler())
       .startWithValues(strongify(weak: self) { `self`, status in

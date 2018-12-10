@@ -88,9 +88,9 @@ final class MajorInputViewController: UIViewController, ViewDowncasting {
     // Captions need to cover the filmstrip time indicator. The player should cover the filmstrip
     // and its time indicator to support the filmstrip's animated appearance. The button for
     // initial transfer of playback controls control must be above the player.
-    downcastView.bringSubview(toFront: downcastView.filmstripTimeIndicator)
-    downcastView.bringSubview(toFront: captionsViewController.downcastView)
-    downcastView.bringSubview(toFront: downcastView.player)
+    downcastView.bringSubviewToFront(downcastView.filmstripTimeIndicator)
+    downcastView.bringSubviewToFront(captionsViewController.downcastView)
+    downcastView.bringSubviewToFront(downcastView.player)
 
     let filmstrip = filmstripViewController.downcastView
     filmstripTimeIndicatorOffset = filmstrip.frame.minX + 2 * filmstripCellWidth
@@ -117,13 +117,13 @@ extension MajorInputViewController { // ViewInitializing
   }
 
   override func buildUserInterface() {
-    addChildViewController(filmstripViewController)
+    addChild(filmstripViewController)
     view.addSubview(filmstripViewController.view)
-    filmstripViewController.didMove(toParentViewController: self)
+    filmstripViewController.didMove(toParent: self)
 
-    addChildViewController(captionsViewController)
+    addChild(captionsViewController)
     view.addSubview(captionsViewController.view)
-    captionsViewController.didMove(toParentViewController: self)
+    captionsViewController.didMove(toParent: self)
   }
 
   override func activateDefaultLayout() {
@@ -146,7 +146,7 @@ fileprivate extension MajorInputViewController {
     DynamicProperty<Int>(object: player, keyPath: #keyPath(AVPlayer.status))
       .producer
       .take(during: reactive.lifetime)
-      .map(AVPlayerStatus.init(rawValue:))
+      .map(AVPlayer.Status.init(rawValue:))
       .skipNil()
       .observe(on: UIScheduler())
       .startWithValues(strongify(weak: self) { `self`, status in

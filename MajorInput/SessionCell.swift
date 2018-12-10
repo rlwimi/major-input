@@ -7,7 +7,7 @@ final class SessionCell: UICollectionViewCell {
 
   let action = UIButton(type: .system)
   let progress = UIProgressView()
-  let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+  let spinner = UIActivityIndicatorView(style: .gray)
 
   let title = UILabel()
   let image = UIImageView()
