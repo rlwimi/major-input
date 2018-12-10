@@ -8,7 +8,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Anchorage</string>
 			<key>Title</key>
-			<string>Anchorage</string>
+			<string>Anchorage (4.3)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -16,7 +16,15 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Buckets-Swift</string>
 			<key>Title</key>
-			<string>Buckets-Swift</string>
+			<string>Buckets-Swift (2.0.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/HTMLEntities</string>
+			<key>Title</key>
+			<string>HTMLEntities (3.0.10)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -24,7 +32,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Kingfisher</string>
 			<key>Title</key>
-			<string>Kingfisher</string>
+			<string>Kingfisher (5.0.0)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -32,7 +40,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/LicensePlist</string>
 			<key>Title</key>
-			<string>LicensePlist</string>
+			<string>LicensePlist (2.0.0)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -40,7 +48,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Nimble</string>
 			<key>Title</key>
-			<string>Nimble</string>
+			<string>Nimble (7.3.1)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -48,7 +56,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Quick</string>
 			<key>Title</key>
-			<string>Quick</string>
+			<string>Quick (1.3.2)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -56,7 +64,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/ReactiveCocoa</string>
 			<key>Title</key>
-			<string>ReactiveCocoa</string>
+			<string>ReactiveCocoa (8.0.2)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -64,15 +72,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/ReactiveSwift</string>
 			<key>Title</key>
-			<string>ReactiveSwift</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
-			<string>com.mono0926.LicensePlist/Regex</string>
-			<key>Title</key>
-			<string>Regex</string>
+			<string>ReactiveSwift (4.0.0)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -80,7 +80,15 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Result</string>
 			<key>Title</key>
-			<string>Result</string>
+			<string>Result (4.0.0)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
+			<string>com.mono0926.LicensePlist/STRegex</string>
+			<key>Title</key>
+			<string>STRegex (1.1.0)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -88,15 +96,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/Strongify</string>
 			<key>Title</key>
-			<string>Strongify</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
-			<string>com.mono0926.LicensePlist/swift-html-entities</string>
-			<key>Title</key>
-			<string>swift-html-entities</string>
+			<string>Strongify (1.2)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
@@ -104,7 +104,7 @@
 			<key>File</key>
 			<string>com.mono0926.LicensePlist/SwiftyJSON</string>
 			<key>Title</key>
-			<string>SwiftyJSON</string>
+			<string>SwiftyJSON (4.2.0)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>

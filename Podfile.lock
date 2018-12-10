@@ -1,0 +1,65 @@
+PODS:
+  - Anchorage (4.3)
+  - HTMLEntities (3.0.10)
+  - Kingfisher (5.0.0)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
+  - STRegex (1.1.0)
+  - Strongify (1.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Anchorage
+  - HTMLEntities (from `https://github.com/IBM-Swift/swift-html-entities.git`)
+  - Kingfisher
+  - Nimble
+  - Quick
+  - ReactiveCocoa
+  - ReactiveSwift
+  - STRegex
+  - Strongify
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Anchorage
+    - Kingfisher
+    - Nimble
+    - Quick
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+    - STRegex
+    - Strongify
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  HTMLEntities:
+    :git: https://github.com/IBM-Swift/swift-html-entities.git
+
+CHECKOUT OPTIONS:
+  HTMLEntities:
+    :commit: 2f582d1f927824045cbbcc5d72614799a8e7f35a
+    :git: https://github.com/IBM-Swift/swift-html-entities.git
+
+SPEC CHECKSUMS:
+  Anchorage: 21a98675245188427f0bcea21404d42a824a766f
+  HTMLEntities: 3d89d72a9aa3b6ad095c584bc2f1383bbed4581c
+  Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  STRegex: eb1f4c2fe9e2f0265b8df8634774cd8cd8914018
+  Strongify: b5286ad3c12ec804b3515625982ca6b52474eb2e
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: ce5cb855e23d4fe99927723c2bea63637dc8c78c
+
+COCOAPODS: 1.5.3

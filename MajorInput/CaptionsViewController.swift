@@ -2,6 +2,7 @@ import UIKit
 import Anchorage
 import ReactiveCocoa
 import ReactiveSwift
+import Strongify
 
 final class CaptionsViewController: UIViewController, ViewDowncasting {
 

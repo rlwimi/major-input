@@ -3,6 +3,7 @@ import AVFoundation
 import Anchorage
 import ReactiveCocoa
 import ReactiveSwift
+import Strongify
 
 final class MajorInputViewController: UIViewController, ViewDowncasting {
 

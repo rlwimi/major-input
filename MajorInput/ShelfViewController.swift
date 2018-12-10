@@ -1,5 +1,6 @@
 import UIKit
 import ReactiveSwift
+import Strongify
 
 final class ShelfViewController: UIViewController, ViewDowncasting {
 

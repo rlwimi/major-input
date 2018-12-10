@@ -1,4 +1,5 @@
 import UIKit
+import Strongify
 
 final class AppNavigationController: UINavigationController {
 

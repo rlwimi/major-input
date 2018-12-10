@@ -4,35 +4,7 @@
    <FileRef
       location = "group:MajorInput.xcodeproj">
    </FileRef>
-   <Group
-      location = "container:"
-      name = "Vendor Projects">
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Anchorage/Anchorage.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Kingfisher/Kingfisher.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Nimble/Nimble.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Quick/Quick.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/ReactiveSwift/ReactiveSwift.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Regex/Regex.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/Result/Result.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Vendor/Carthage/Checkouts/SwiftyJSON/SwiftyJSON.xcodeproj">
-      </FileRef>
-   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -2,6 +2,7 @@ import UIKit
 import Anchorage
 import Kingfisher
 import ReactiveSwift
+import Strongify
 
 final class SessionCell: UICollectionViewCell {
 

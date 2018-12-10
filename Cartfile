@@ -1,0 +1,6 @@
+github "mauriciosantos/Buckets-Swift"
+github "rlwimi/wwdc-session-transcripts" "whats-new-in-captions"
+
+# Listed here only to include its own license in Settings. Use released binary.
+# Pinned to match/document binary in Tools.
+github "mono0926/LicensePlist" == 2.0.0

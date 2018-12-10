@@ -3,6 +3,7 @@ import UIKit
 import Anchorage
 import ReactiveCocoa
 import ReactiveSwift
+import Strongify
 
 final class PlayerView: UIView {
 

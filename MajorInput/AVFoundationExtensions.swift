@@ -2,6 +2,7 @@ import AVFoundation
 import UIKit
 import ReactiveSwift
 import Result
+import Strongify
 
 extension AVAsset {
   func images(for times: [TimeInterval], size: CGSize) -> SignalProducer<[UIImage], NoError> {

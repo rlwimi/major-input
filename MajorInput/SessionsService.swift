@@ -1,6 +1,7 @@
 import Foundation
 import Regex
 import SwiftyJSON
+import HTMLEntities
 
 final class SessionsService {
 
