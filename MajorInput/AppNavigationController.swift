@@ -35,8 +35,8 @@ fileprivate extension AppNavigationController {
     let container = UINavigationBar.appearance(whenContainedInInstancesOf: [type(of: self)])
     container.barTintColor = .systemTintColor
     container.titleTextAttributes = [
-      NSAttributedString.Key.foregroundColor: UIColor.white,
-      NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 24)
+      .foregroundColor: UIColor.white,
+      .font: UIFont.boldSystemFont(ofSize: 24)
     ]
   }
 

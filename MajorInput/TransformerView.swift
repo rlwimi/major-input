@@ -179,7 +179,7 @@ fileprivate extension TransformerIcon {
     layer.fillColor = UIColor.clear.cgColor
     layer.strokeColor = color.cgColor
     layer.lineWidth = 2
-    layer.lineCap = CAShapeLayerLineCap.round
-    layer.lineJoin = CAShapeLayerLineJoin.round
+    layer.lineCap = .round
+    layer.lineJoin = .round
   }
 }
