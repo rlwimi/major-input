@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B657D4C920BB44E7003C5B4C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B657D4C820BB44E7003C5B4C /* ReactiveSwift.framework */; };
-		B657D4CA20BB44EE003C5B4C /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B657D4C820BB44E7003C5B4C /* ReactiveSwift.framework */; };
 		B657D4CB20BB44EE003C5B4C /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B657D4C820BB44E7003C5B4C /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC15DD791F40DE5500DD09F0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC15DD771F40DE0E00DD09F0 /* Kingfisher.framework */; };
 		FC15DD7A1F40DE5500DD09F0 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC15DD771F40DE0E00DD09F0 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -192,7 +191,6 @@
 				FCF6EBEA1F41005700B98879 /* Regex.framework in Frameworks */,
 				B657D4C920BB44E7003C5B4C /* ReactiveSwift.framework in Frameworks */,
 				FCC8AA911EB925CD00A21D24 /* ReactiveCocoa.framework in Frameworks */,
-				B657D4CA20BB44EE003C5B4C /* ReactiveSwift.framework in Frameworks */,
 				FCC8AA971EB925E700A21D24 /* SwiftyJSON.framework in Frameworks */,
 				FCC8AA951EB925E200A21D24 /* Result.framework in Frameworks */,
 				FCC8AA8C1EB925C000A21D24 /* Anchorage.framework in Frameworks */,
@@ -585,7 +583,7 @@
 			attributes = {
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					FCF3CCFF1E8D7F0B0060EF2E = {
@@ -737,6 +735,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -744,6 +743,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -794,6 +794,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -801,6 +802,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
