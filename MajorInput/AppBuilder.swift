@@ -26,4 +26,8 @@ final class AppBuilder {
   func makeMajorInputViewController(session: Session) -> MajorInputViewController {
     return MajorInputViewController(session: session, dependencies: dependencies)
   }
+
+  func makePanelsViewController(session: Session) -> PanelsViewController {
+    return PanelsViewController(session: session, dependencies: dependencies)
+  }
 }

@@ -74,6 +74,53 @@ extension UIColor {
   }()
 }
 
+extension UIEdgeInsets {
+
+  var horizontalTotal: CGFloat {
+    return left + right
+  }
+
+  var verticalTotal: CGFloat {
+    return top + bottom
+  }
+}
+
+extension UIEdgeInsets {
+  public init(uniform: CGFloat) {
+    self.init(top: uniform, left: uniform, bottom: uniform, right: uniform)
+  }
+}
+
+extension UIEdgeInsets: ExpressibleByDictionaryLiteral {
+  public typealias Key = EdgeKey
+  public typealias Value = CGFloat
+
+  public enum EdgeKey {
+    case top
+    case left
+    case bottom
+    case right
+  }
+
+  func keyPathForEdge(_ edgeKey: EdgeKey) -> WritableKeyPath<UIEdgeInsets, CGFloat> {
+    switch edgeKey {
+    case .top: return \UIEdgeInsets.top
+    case .left: return \UIEdgeInsets.left
+    case .bottom: return \UIEdgeInsets.bottom
+    case .right: return \UIEdgeInsets.right
+    }
+  }
+
+  public init(dictionaryLiteral elements: (EdgeKey, CGFloat)...) {
+    self = UIEdgeInsets()
+
+    for (inset, value) in elements {
+      let keyPath = self.keyPathForEdge(inset)
+      self[keyPath: keyPath] = value
+    }
+  }
+}
+
 extension UILayoutGuide {
   convenience init(identifier: String) {
     self.init()

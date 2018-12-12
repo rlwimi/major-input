@@ -13,7 +13,12 @@
 		FC242DEE1E8DEABB009754E7 /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC242DED1E8DEABB009754E7 /* Caption.swift */; };
 		FC549EC71EF6E63D007CBFD6 /* Session+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */; };
 		FC58CA5B1EF88FE700EC49EA /* sessions.json in Resources */ = {isa = PBXBuildFile; fileRef = FC58CA5A1EF88FE700EC49EA /* sessions.json */; };
+		FC64076921BF425700F5AE12 /* PanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64076821BF425700F5AE12 /* PanelView.swift */; };
+		FC64076B21BF42BF00F5AE12 /* LayerDowncasting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64076A21BF42BF00F5AE12 /* LayerDowncasting.swift */; };
+		FC64076D21BF43EB00F5AE12 /* LoopingPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64076C21BF43EB00F5AE12 /* LoopingPlayerView.swift */; };
 		FC9061D621BF20510023D06D /* Bimap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9061A221BF20130023D06D /* Bimap.swift */; };
+		FC9061D921BF35040023D06D /* PanelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9061D821BF35040023D06D /* PanelsViewController.swift */; };
+		FC9061DB21BF351E0023D06D /* PanelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9061DA21BF351E0023D06D /* PanelsView.swift */; };
 		FC9066301E92FC48009363C8 /* StringExtensionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90662F1E92FC48009363C8 /* StringExtensionsSpec.swift */; };
 		FC90663A1E93F194009363C8 /* CaptionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9066391E93F194009363C8 /* CaptionSpec.swift */; };
 		FC90663C1E93FF72009363C8 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90663B1E93FF72009363C8 /* FoundationExtensions.swift */; };
@@ -89,8 +94,13 @@
 		FC242DED1E8DEABB009754E7 /* Caption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
 		FC549EC61EF6E63D007CBFD6 /* Session+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+JSON.swift"; sourceTree = "<group>"; };
 		FC58CA5A1EF88FE700EC49EA /* sessions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sessions.json; sourceTree = "<group>"; };
+		FC64076821BF425700F5AE12 /* PanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelView.swift; sourceTree = "<group>"; };
+		FC64076A21BF42BF00F5AE12 /* LayerDowncasting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerDowncasting.swift; sourceTree = "<group>"; };
+		FC64076C21BF43EB00F5AE12 /* LoopingPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingPlayerView.swift; sourceTree = "<group>"; };
 		FC90618E21BF20130023D06D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FC9061A221BF20130023D06D /* Bimap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bimap.swift; sourceTree = "<group>"; };
+		FC9061D821BF35040023D06D /* PanelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsViewController.swift; sourceTree = "<group>"; };
+		FC9061DA21BF351E0023D06D /* PanelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsView.swift; sourceTree = "<group>"; };
 		FC90662F1E92FC48009363C8 /* StringExtensionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsSpec.swift; sourceTree = "<group>"; };
 		FC9066391E93F194009363C8 /* CaptionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionSpec.swift; sourceTree = "<group>"; };
 		FC90663B1E93FF72009363C8 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
@@ -204,6 +214,17 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		FC9061D721BF34E90023D06D /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				FC9061D821BF35040023D06D /* PanelsViewController.swift */,
+				FC9061DA21BF351E0023D06D /* PanelsView.swift */,
+				FC64076821BF425700F5AE12 /* PanelView.swift */,
+				FC64076C21BF43EB00F5AE12 /* LoopingPlayerView.swift */,
+			);
+			name = Panels;
+			sourceTree = "<group>";
+		};
 		FC90662D1E92D5F0009363C8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +270,7 @@
 				FCBB65B61E96B86C008A8568 /* ClassStringProviding.swift */,
 				FCD2292B1EBDEE9600037D43 /* DependencyProtocols.swift */,
 				FCBD736D1EBB99780034FEFD /* Identifiable.swift */,
+				FC64076A21BF42BF00F5AE12 /* LayerDowncasting.swift */,
 				FCD1C4BF1EAAB1DD00C22DEE /* PlayerSeeker.swift */,
 				FCD2C48E1EC12117005A0C0B /* SortDescriptor.swift */,
 				FCA2DC281EC5EF4B00427D3C /* TouchStencilingButton.swift */,
@@ -274,6 +296,7 @@
 				FCD229601EBFC75700037D43 /* App */,
 				FCD229651EBFC82200037D43 /* Major Input */,
 				FCD229661EBFC82A00037D43 /* Shelf */,
+				FC9061D721BF34E90023D06D /* Panels */,
 			);
 			name = Presentation;
 			sourceTree = "<group>";
@@ -633,6 +656,7 @@
 				FCC8AA541EB8F44B00A21D24 /* SessionCell.swift in Sources */,
 				FC9451931EB1218D00D42C25 /* CaptionsViewController.swift in Sources */,
 				FCBB65BB1E97298B008A8568 /* UIKitExtensions.swift in Sources */,
+				FC9061D921BF35040023D06D /* PanelsViewController.swift in Sources */,
 				FCD5F0E81E959F1E0034FD35 /* AVFoundationExtensions.swift in Sources */,
 				FCA2DC291EC5EF4B00427D3C /* TouchStencilingButton.swift in Sources */,
 				FCC8AA501EB8EDDF00A21D24 /* ShelfViewController.swift in Sources */,
@@ -654,12 +678,16 @@
 				FC90663C1E93FF72009363C8 /* FoundationExtensions.swift in Sources */,
 				FCC8AA521EB8EE0400A21D24 /* ShelfView.swift in Sources */,
 				FCC8AA4E1EB804AF00A21D24 /* Session.swift in Sources */,
+				FC9061DB21BF351E0023D06D /* PanelsView.swift in Sources */,
 				FC94518D1EAABB8400D42C25 /* FilmstripViewController.swift in Sources */,
 				FC242DEE1E8DEABB009754E7 /* Caption.swift in Sources */,
 				FCD1C4C01EAAB1DD00C22DEE /* PlayerSeeker.swift in Sources */,
 				FCA2DC271EC5EC3A00427D3C /* PlayerView.swift in Sources */,
+				FC64076921BF425700F5AE12 /* PanelView.swift in Sources */,
 				FCD229301EBDF3C600037D43 /* AppBuilder.swift in Sources */,
 				FCD2292C1EBDEE9600037D43 /* DependencyProtocols.swift in Sources */,
+				FC64076B21BF42BF00F5AE12 /* LayerDowncasting.swift in Sources */,
+				FC64076D21BF43EB00F5AE12 /* LoopingPlayerView.swift in Sources */,
 				FCD2292E1EBDEF0000037D43 /* SessionsService.swift in Sources */,
 				FC9061D621BF20510023D06D /* Bimap.swift in Sources */,
 				FCF3CD041E8D7F0B0060EF2E /* AppDelegate.swift in Sources */,

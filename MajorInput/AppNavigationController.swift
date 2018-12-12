@@ -42,17 +42,21 @@ fileprivate extension AppNavigationController {
   }
 
   func shelfDidSelect(_ session: Session) {
-    let majorInput = builder.makeMajorInputViewController(session: session)
-    majorInput.navigationItem.leftBarButtonItem = makeDoneBarButtonItem()
+    setNavigationBarHidden(true, animated: true)
+    let view = builder.makePanelsViewController(session: session)
+    pushViewController(view, animated: true)
 
-    majorInput.downcastView.player.showsOverlay
-      .producer
-      .take(during: majorInput.reactive.lifetime)
-      .startWithValues(strongify(weak: self) { `self`, showsOverlay in
-        self.setNeedsStatusBarAppearanceUpdate()
-        self.setNavigationBarHidden(!showsOverlay, animated: true)
-      })
-    pushViewController(majorInput, animated: true)
+//    let majorInput = builder.makeMajorInputViewController(session: session)
+//    majorInput.navigationItem.leftBarButtonItem = makeDoneBarButtonItem()
+//
+//    majorInput.downcastView.player.showsOverlay
+//      .producer
+//      .take(during: majorInput.reactive.lifetime)
+//      .startWithValues(strongify(weak: self) { `self`, showsOverlay in
+//        self.setNeedsStatusBarAppearanceUpdate()
+//        self.setNavigationBarHidden(!showsOverlay, animated: true)
+//      })
+//    pushViewController(majorInput, animated: true)
   }
 
   func makeDoneBarButtonItem() -> UIBarButtonItem {
