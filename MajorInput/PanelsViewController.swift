@@ -41,8 +41,63 @@ ViewDowncasting {
 
     downcastView.url = url
 
-    let page = Array(captions[11...16])
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeLeft))
+    swipeLeft.direction = .left
+    let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(didSwipeRight))
+    swipeRight.direction = .right
 
+    downcastView.addGestureRecognizer(swipeLeft)
+    downcastView.addGestureRecognizer(swipeRight)
+
+    render()
+  }
+
+  // MARK: - private
+
+  private var panelsPerPage = 6
+  private var currentPage = 0
+
+  private var nextPage: Int? {
+    let nextPage = currentPage + 1
+    if captions.indices.contains(nextPage * panelsPerPage) {
+      return nextPage
+    } else {
+      return nil
+    }
+  }
+
+  private var previousPage: Int? {
+    let previousPage = currentPage - 1
+    if captions.indices.contains(previousPage * panelsPerPage) {
+      return previousPage
+    } else {
+      return nil
+    }
+  }
+
+  private func render() {
+    guard let lastCaptionsIndex = captions.indices.last else {
+      return
+    }
+    let first = currentPage * panelsPerPage
+    let last = min(first + panelsPerPage, lastCaptionsIndex)
+    let page = Array(captions[first..<last])
     downcastView.render(page)
+  }
+
+  @objc private func didSwipeLeft() {
+    guard let nextPage = nextPage else {
+      return
+    }
+    currentPage = nextPage
+    render()
+  }
+
+  @objc private func didSwipeRight() {
+    guard let previousPage = previousPage else {
+      return
+    }
+    currentPage = previousPage
+    render()
   }
 }

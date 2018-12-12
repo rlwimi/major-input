@@ -52,6 +52,9 @@ UICollectionViewDelegateFlowLayout {
       return
     }
 
+    panels.forEach { $0.removeFromSuperview() }
+    panels = []
+
     for caption in captions {
       let panel = PanelView()
       panel.layoutMargins = .init(uniform: 8)
