@@ -31,8 +31,10 @@ final class PanelView: UIView {
 
   override func activateDefaultLayout() {
     looper.topAnchor == self.topAnchor
+
+    // Begin text below image, unless it's too long, then allow it to overlap above image.
     caption.topAnchor <= looper.bottomAnchor + 8
-    caption.topAnchor == looper.bottomAnchor + 8 ~ .high
+    caption.topAnchor == looper.bottomAnchor + 8 ~ .low
     caption.bottomAnchor <= layoutMarginsGuide.bottomAnchor
 
     looper.horizontalAnchors == self.horizontalAnchors
