@@ -85,8 +85,8 @@ final class DownloadsService: NSObject {
   }
 
   func deleteDownload(for session: Session) {
+    let url = self.url(for: session)
     do {
-      let url = self.url(for: session)
       try fileManager.removeItem(at: url)
     } catch {
       print("Could not remove item at \(url)\n\(error)")
