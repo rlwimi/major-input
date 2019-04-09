@@ -506,7 +506,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MajorInput/Pods-MajorInput-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MajorInput/Pods-MajorInput-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework",
 				"${BUILT_PRODUCTS_DIR}/HTMLEntities/HTMLEntities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -533,7 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MajorInput/Pods-MajorInput-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MajorInput/Pods-MajorInput-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		536FBB03632F2D6BF27B263F /* [CP] Check Pods Manifest.lock */ = {
@@ -566,7 +566,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MajorInputTests/Pods-MajorInputTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MajorInputTests/Pods-MajorInputTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework",
 				"${BUILT_PRODUCTS_DIR}/HTMLEntities/HTMLEntities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -597,7 +597,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MajorInputTests/Pods-MajorInputTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MajorInputTests/Pods-MajorInputTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC74C413B65B86B17E4EF889 /* [CP] Check Pods Manifest.lock */ = {
