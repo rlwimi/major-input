@@ -64,7 +64,7 @@ extension Array where Element == Caption {
 
 fileprivate extension Caption {
   /// True unless `text` ends in a terminal point (`[.!?]`) and except for square-bracketed values.
-  fileprivate var completesSentence: Bool {
+  var completesSentence: Bool {
     return text.endsInTerminalPoint || text.isBracketed
   }
 }
