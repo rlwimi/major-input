@@ -1,4 +1,4 @@
-struct Identifier<Resource>: RawRepresentable {
+struct Identifier<Resource>: RawRepresentable, Hashable {
   let rawValue: String
 
   init(rawValue: String) {
@@ -6,29 +6,7 @@ struct Identifier<Resource>: RawRepresentable {
   }
 }
 
-protocol IdentifierProtocol: Hashable {}
-
-extension Identifier: IdentifierProtocol {}
-
-extension Identifier: Equatable {
-  static func == (lhs: Identifier, rhs: Identifier) -> Bool {
-    return lhs.rawValue == rhs.rawValue
-  }
-}
-
-extension Identifier: Hashable {
-  var hashValue: Int {
-    return rawValue.hashValue
-  }
-}
-
 protocol Identifiable: Hashable {
-  associatedtype IdentifierType: IdentifierProtocol
+  associatedtype IdentifierType: Hashable
   var identifier: IdentifierType { get }
-}
-
-extension Identifiable {
-  var hashValue: Int {
-    return identifier.hashValue
-  }
 }

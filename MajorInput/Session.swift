@@ -30,11 +30,11 @@ enum Track: String {
   case tools = "Tools"
 }
 
-enum Conference: String {
+enum Conference: String, Hashable {
   case wwdc = "WWDC"
 }
 
-struct Session: Identifiable {
+struct Session: Identifiable, Hashable {
   let identifier: Identifier<Session>
   let conference: Conference
   let description: String
@@ -94,27 +94,5 @@ struct Session: Identifiable {
 extension Session {
   static func makeIdentifier(conference: Conference, year: String, number: String) -> Identifier<Session> {
     return Identifier(rawValue: [conference.rawValue, year, number].joined(separator: "-"))
-  }
-}
-
-extension Session: Equatable {
-
-  static func == (lhs: Session, rhs: Session) -> Bool {
-    return lhs.year == rhs.year &&
-      lhs.number == rhs.number &&
-      lhs.description == rhs.description &&
-      lhs.downloadHD == rhs.downloadHD &&
-      lhs.downloadSD == rhs.downloadSD &&
-      lhs.duration == rhs.duration &&
-      lhs.focuses == rhs.focuses &&
-      lhs.image == rhs.image &&
-      lhs.title == rhs.title &&
-      lhs.track == rhs.track
-  }
-}
-
-extension Session: Hashable {
-  var hashValue: Int {
-    return identifier.hashValue
   }
 }
