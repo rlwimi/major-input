@@ -76,7 +76,7 @@ extension Array where Element == Caption {
   func index(for time: TimeInterval) -> Int {
     precondition(isEmpty == false)
     let index: Int
-    if let first = self.index(where: { time < $0.end }) {
+    if let first = self.firstIndex(where: { time < $0.end }) {
       index = first
     } else {
       index = indices.last!

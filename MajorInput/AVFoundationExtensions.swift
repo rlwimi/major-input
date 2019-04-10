@@ -17,7 +17,7 @@ extension AVAsset {
       generator.generateCGImagesAsynchronously(forTimes: requestedTimes) { requestedTime, image, actualTime, result, error in
         let time = NSValue(time: requestedTime)
 
-        guard case .succeeded = result, let cgImage = image, let index = generatingTimes.index(of: time)
+        guard case .succeeded = result, let cgImage = image, let index = generatingTimes.firstIndex(of: time)
           else { fatalError() }
 
         frames[time] = UIImage(cgImage: cgImage)
