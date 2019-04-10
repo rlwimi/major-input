@@ -36,5 +36,21 @@ target 'MajorInputTests' do
 end
 
 post_install do |installer|
+
+  # Mark older-Swift-compatible dependencies as Swift 5, to prevent Xcode from
+  # suggesting a Swift 5 migration is available because of these targets.
+  installer.pods_project.targets.each do |target|
+    next unless [
+      'Nimble',
+      'ReactiveSwift',
+      'Result'
+    ].include? target.name
+
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '5.0'
+    end
+  end
+
+  # Generate dependencies' license acknowledgements settings bundle
   system("sh Tools/Scripts/generate-acknowledgements.sh")
 end

@@ -1,5 +1,4 @@
 import ReactiveSwift
-import Result
 
 enum DownloadStatus {
   case remote
