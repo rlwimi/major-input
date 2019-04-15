@@ -1,3 +1,10 @@
+### 1.5.0
+4/15/2019
+
+[new] Migrate to Swift 5.
+[new] Migrate most dependency management from Carthage-with-manual-integration to Cocoapods.
+[improved] License is now a standard. GPLv3 is a better way to communicate the restriction against submitting to any of Apple's app stores.
+
 ### 1.4.0
 5/27/2018
 
