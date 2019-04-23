@@ -458,10 +458,9 @@
 			};
 			buildConfigurationList = FCF3CCFB1E8D7F0B0060EF2E /* Build configuration list for PBXProject "MajorInput" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
