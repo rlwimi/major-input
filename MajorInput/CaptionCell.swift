@@ -34,6 +34,7 @@ final class CaptionCell: UICollectionViewCell {
 extension CaptionCell { // ViewInitializing
   override func configure() {
     didSetProps()
+    caption.textColor = .black
     caption.numberOfLines = 0
     contentView.layoutMargins = UIEdgeInsets(top: 0, left: 40, bottom: 16, right: 16)
     caption.font = UIFont.systemFont(ofSize: 24)
