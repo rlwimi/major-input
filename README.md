@@ -1,3 +1,11 @@
+# ⚠️ Archived
+
+In 2019, Apple [added transcripts](https://developer.apple.com/news/?id=07102019a) to WWDC session video webpages, as well as the interaction that clicking text in the transcript scrubs to the corresponding time in the video. Apple released the [Developer.app](https://developer.apple.com/news/?id=11182019a) a few months later including the same functionality.
+
+While I do miss the one aspect of Major Input's UX design that Apple's is missing—that the video's time is locked in sync with the transcript's scroll offset—Apple's tap/click-based interaction is clearly and thoroughly ["good enough"](https://en.wikipedia.org/wiki/Principle_of_good_enough). I'm so happy to be living in the future.
+
+---
+
 ![MajorInput icon](./MajorInput/Assets.xcassets/AppIcon.appiconset/iTunesArtwork@2x-60@3x.png)
 
 # Major Input
